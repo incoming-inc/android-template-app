@@ -1,0 +1,317 @@
+<!--
+  Copyright (c) Incoming Pty. Ltd. 2014
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+
+  <groupId>com.incoming</groupId>
+  <artifactId>android-pvn-template</artifactId>
+  <name>Incoming Push Video Notification Template</name>
+  <description>Simple template application to demonstrate how to integrate the Incoming Push Video Notification SDK.</description>
+  <packaging>apk</packaging> <!-- android:apk -->
+  <version>0.0.15-SNAPSHOT</version>
+
+  <properties>
+    <pvn.version>0.0.9-SNAPSHOT</pvn.version>
+
+    <!-- Specify the Android keystore to sign the release profile build -->
+    <!--
+    <android.keystore>__path_to_keystore__</android.keystore>
+    <android.storepass>__storepass__</android.storepass>
+    <android.keypass>__keypass__</android.keypass>
+    <android.alias>__alias__</android.alias>
+    -->
+
+    <!-- Debug (logging, no proguard optimisation) is the default build. Over-ridden in the release profile. -->
+    <app_name_suffix>-debug</app_name_suffix>
+  </properties>
+
+  <!-- The locations this pom will use to search for dependencies. Credentials must be set up in ~/.m2/settings.xml to access restricted repos. -->
+  <repositories>
+    <repository>
+      <!-- Access to the Incoming release repo is not restricted -->
+      <id>incoming-release-repo</id>
+      <name>Incoming release repo</name>
+      <url>https://repository-incoming.forge.cloudbees.com/release/</url>
+    </repository>
+  </repositories>
+
+  <!-- Defines the dependency versions used by this project. -->
+  <dependencyManagement>
+    <dependencies>
+
+      <dependency>
+        <groupId>android</groupId>
+        <artifactId>android</artifactId>
+        <version>4.4.2_r3</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.android.gms</groupId>
+        <artifactId>google-play-services</artifactId>
+        <version>15.0.0</version>
+        <type>apklib</type>
+      </dependency>
+
+
+      <dependency>
+        <groupId>com.google.android.gms</groupId>
+        <artifactId>google-play-services</artifactId>
+        <version>15.0.0</version>
+        <type>jar</type>
+      </dependency>
+
+      <dependency>
+        <groupId>com.incoming.au</groupId>
+        <artifactId>incoming-sdk</artifactId>
+        <version>${pvn.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.incoming.au</groupId>
+        <artifactId>incoming-push-video-library</artifactId>
+        <version>${pvn.version}</version>
+        <type>aar</type>
+      </dependency>
+
+    </dependencies>
+
+  </dependencyManagement>
+
+  <!-- Defines the dependencies used by this project. -->
+  <dependencies>
+    <dependency>
+      <groupId>android</groupId>
+      <artifactId>android</artifactId>
+      <scope>provided</scope>
+      <type>jar</type>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.android.gms</groupId>
+      <artifactId>google-play-services</artifactId>
+      <type>apklib</type>
+    </dependency>
+
+
+    <dependency>
+      <groupId>com.google.android.gms</groupId>
+      <artifactId>google-play-services</artifactId>
+      <type>jar</type>
+    </dependency>
+
+    <dependency>
+      <groupId>com.incoming.au</groupId>
+      <artifactId>incoming-sdk</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.incoming.au</groupId>
+      <artifactId>incoming-push-video-library</artifactId>
+      <type>aar</type>
+    </dependency>
+
+  </dependencies>
+
+
+  <build>
+    <!-- Customise source, test, and resources locations because we are not using the standard convention src/main/java, src/test/java, src/test/resources -->
+    <sourceDirectory>${project.basedir}/src</sourceDirectory>
+    <testSourceDirectory>${project.basedir}/test/java</testSourceDirectory>
+    <testResources>
+      <testResource>
+        <directory>${project.basedir}/test/resources</directory>
+      </testResource>
+    </testResources>
+
+
+
+    <plugins>
+
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+        <artifactId>android-maven-plugin</artifactId>
+        <version>3.9.0-rc.2</version>
+        <extensions>true</extensions>
+        <configuration>
+          <sdk>
+            <path>${env.ANDROID_HOME}</path>
+            <platform>19</platform>
+          </sdk>
+          <undeployBeforeDeploy>true</undeployBeforeDeploy>
+          <manifest>
+            <debuggable>true</debuggable>
+            <!-- Sets the version to that of this maven project -->
+            <versionName />
+          </manifest>
+        </configuration>
+      </plugin>
+
+    </plugins>
+
+
+    <pluginManagement>
+      <plugins>
+
+
+
+
+        <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself. -->
+        <plugin>
+          <groupId>org.eclipse.m2e</groupId>
+          <artifactId>lifecycle-mapping</artifactId>
+          <version>1.0.0</version>
+          <configuration>
+            <lifecycleMappingMetadata>
+              <pluginExecutions>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                    <artifactId>android-maven-plugin</artifactId>
+                    <versionRange>[3.9.0-rc.2,)</versionRange>
+                    <goals>
+                      <goal>consume-aar</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <ignore />
+                  </action>
+                </pluginExecution>
+              </pluginExecutions>
+            </lifecycleMappingMetadata>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-webdav-jackrabbit</artifactId>
+        <version>2.4</version>
+      </extension>
+    </extensions>
+  </build>
+
+  <profiles>
+    <!-- release profile. Disable logging etc -->
+    <profile>
+      <id>release</id>
+      <properties>
+        <app_name_suffix />
+        <disable_debug>true</disable_debug>
+      </properties>
+      <build>
+        <plugins>
+
+          <!-- As described at https://code.google.com/p/maven-android-plugin/wiki/SigningAPKWithMavenJarsigner -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jarsigner-plugin</artifactId>
+            <version>1.2</version>
+            <executions>
+              <execution>
+                <id>signing</id>
+                <goals>
+                  <goal>sign</goal>
+                  <goal>verify</goal>
+                </goals>
+                <phase>package</phase>
+                <inherited>true</inherited>
+                <configuration>
+                  <archiveDirectory />
+                  <includes>
+                    <include>target/*.apk</include>
+                  </includes>
+                  <keystore>${android.keystore}</keystore>
+                  <storepass>${android.storepass}</storepass>
+                  <keypass>${android.keypass}</keypass>
+                  <alias>${android.alias}</alias>
+                  <verbose>true</verbose>
+                  <arguments>
+                    <argument>-sigalg</argument>
+                    <argument>MD5withRSA</argument>
+                    <argument>-digestalg</argument>
+                    <argument>SHA1</argument>
+                  </arguments>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+
+
+
+          <plugin>
+            <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+            <artifactId>android-maven-plugin</artifactId>
+            <dependencies>
+              <dependency>
+                <groupId>net.sf.proguard</groupId>
+                <artifactId>proguard-base</artifactId>
+                <version>4.11</version>
+              </dependency>
+            </dependencies>
+            <inherited>true</inherited>
+            <configuration>
+              <!-- Uncomment the following block when an official Android certificate is used. This will avoid signing the APK with the debug certificate. -->
+              <sign>
+                <debug>false</debug>
+              </sign>
+              <zipalign>
+                <skip>false</skip>
+                <verbose>false</verbose>
+                <inputApk>${project.build.directory}/${project.build.finalName}.apk</inputApk>
+                <outputApk>${project.build.directory}/${project.build.finalName}-signed-aligned.apk
+                </outputApk>
+              </zipalign>
+
+              <manifest>
+                <debuggable>false</debuggable>
+                <versionCodeAutoIncrement>true</versionCodeAutoIncrement>
+              </manifest>
+
+              <proguard>
+                <skip>false</skip>
+                <config>proguard.cfg</config>
+              </proguard>
+            </configuration>
+            <executions>
+              <execution>
+                <id>manifestUpdate</id>
+                <phase>process-resources</phase>
+                <goals>
+                  <goal>manifest-update</goal>
+                </goals>
+              </execution>
+              <execution>
+                <id>alignApk</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>zipalign</goal>
+                </goals>
+              </execution>
+
+            </executions>
+          </plugin>
+
+
+
+        </plugins>
+      </build>
+
+    </profile>
+  </profiles>
+
+</project>
+
+
