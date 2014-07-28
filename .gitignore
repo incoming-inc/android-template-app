@@ -28,3 +28,7 @@ proguard/
 .metadata
 .project
 .settings
+
+# Incoming SDK configuration - provided in the distribution bundle so not checked in
+incoming_android_sdk.xml
+
