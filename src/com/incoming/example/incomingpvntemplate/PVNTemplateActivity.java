@@ -10,6 +10,8 @@ import android.view.Menu;
 
 import com.incoming.au.foundation.PushVideoAppRunner;
 import com.incoming.au.foundation.tool.LogIncoming;
+import com.incoming.au.sdk.notification.NotificationFull;
+import com.incoming.au.uiframework.VideoViewPlayer;
 
 public class PVNTemplateActivity extends Activity {
 
@@ -27,7 +29,7 @@ public class PVNTemplateActivity extends Activity {
 
     LogIncoming.setDevBuild(true);
     PushVideoAppRunner appRunner = new PushVideoAppRunner(getApplicationContext(), endPoint, projectKey);
-    appRunner.configure();
+    appRunner.configure(NotificationFull.class, VideoViewPlayer.class);
     
     Log.i(TAG, "Launched the Incoming Push Video Notification SDK");
 
