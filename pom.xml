@@ -42,11 +42,6 @@
 
 
 
-      <dependency>
-        <groupId>com.incoming.au</groupId>
-        <artifactId>incoming-sdk</artifactId>
-        <version>${pvn.version}</version>
-      </dependency>
 
       <dependency>
         <groupId>com.incoming.au</groupId>
@@ -74,14 +69,6 @@
       <artifactId>android</artifactId>
       <scope>provided</scope>
       <type>jar</type>
-    </dependency>
-
-
-
-
-    <dependency>
-      <groupId>com.incoming.au</groupId>
-      <artifactId>incoming-sdk</artifactId>
     </dependency>
 
     <dependency>
