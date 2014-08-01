@@ -61,5 +61,5 @@ android {
 }
 
 dependencies {
-    compile 'com.incoming.au:incoming-push-video-library:0.0.11'
+    compile 'com.incoming.au:incoming-push-video-library:0.0.12'
 }
