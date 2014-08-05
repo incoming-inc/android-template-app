@@ -29,7 +29,7 @@
 
     <!-- End PVN permission configuration -->
 
-    <application android:allowBackup="true" android:debuggable="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
 
         <!-- Begin PVN configuration -->
 
@@ -58,6 +58,7 @@
             <intent-filter>
                 <action android:name="com.incoming.notif.3"/>
                 <action android:name="com.incoming.notif.check"/>
+                <action android:name="com.incoming.feed.check" />
                 <action android:name="com.incoming.download.trigger"/>
                 <action android:name="com.android.vending.INSTALL_REFERRER"/>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
