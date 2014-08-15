@@ -25,7 +25,7 @@ dependencies {
 }
 
 android {
-    compileSdkVersion 'android-L'
+    compileSdkVersion 19
     buildToolsVersion "20.0.0"
 
     defaultConfig {
@@ -57,9 +57,14 @@ android {
         release.setRoot('build-types/release')
     }
 
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+
 
 }
 
 dependencies {
-    compile 'com.incoming.au:incoming-push-video-library:0.0.12'
+    compile 'com.incoming-media:incoming-push-video-library:0.0.14'
 }
