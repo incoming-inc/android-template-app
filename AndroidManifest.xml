@@ -46,13 +46,7 @@
                 <category android:name="com.incoming.example.incomingpvntemplate"/>
             </intent-filter>
         </receiver>
-        <!--
-        <receiver android:name="com.incoming.au.sdk.prefetch.DownloadBroadcastReceiver" >
-            <intent-filter>
-                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
-            </intent-filter>
-        </receiver>
-        -->
+       
 
         <receiver android:name="com.incoming.au.sdk.notification.NotificationBroadcastReceiver">
             <intent-filter>
