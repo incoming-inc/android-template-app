@@ -11,7 +11,7 @@
   <version>0.0.15-SNAPSHOT</version>
 
   <properties>
-    <pvn.version>0.0.12</pvn.version>
+    <pvn.version>0.0.14</pvn.version>
 
     <!-- Specify the Android keystore to sign the release profile build -->
     <!-- <android.keystore>__path_to_keystore__</android.keystore> <android.storepass>__storepass__</android.storepass> <android.keypass>__keypass__</android.keypass> 
@@ -40,11 +40,8 @@
         <version>4.4.2_r3</version>
       </dependency>
 
-
-
-
       <dependency>
-        <groupId>com.incoming.au</groupId>
+        <groupId>com.incoming-media</groupId>
         <artifactId>incoming-push-video-library</artifactId>
         <version>${pvn.version}</version>
         <type>aar</type>
@@ -52,7 +49,7 @@
 
       <!-- Provides access to the compiled class files when using m2e-android. See https://code.google.com/p/android/issues/detail?id=59183#c8 -->
       <dependency>
-        <groupId>com.incoming.au</groupId>
+        <groupId>com.incoming-media</groupId>
         <artifactId>incoming-push-video-library</artifactId>
         <version>${pvn.version}</version>
         <type>jar</type>
@@ -72,14 +69,14 @@
     </dependency>
 
     <dependency>
-      <groupId>com.incoming.au</groupId>
+      <groupId>com.incoming-media</groupId>
       <artifactId>incoming-push-video-library</artifactId>
       <type>aar</type>
     </dependency>
 
     <!-- Provides access to the compiled class files when using m2e-android. See https://code.google.com/p/android/issues/detail?id=59183#c8 -->
     <dependency>
-      <groupId>com.incoming.au</groupId>
+      <groupId>com.incoming-media</groupId>
       <artifactId>incoming-push-video-library</artifactId>
       <type>jar</type>
       <scope>provided</scope>
@@ -91,19 +88,13 @@
     <!-- Customise source, test, and resources locations because we are not using the standard convention src/main/java, 
       src/test/java, src/test/resources -->
     <sourceDirectory>${project.basedir}/src</sourceDirectory>
-    <testSourceDirectory>${project.basedir}/test/java</testSourceDirectory>
-    <testResources>
-      <testResource>
-        <directory>${project.basedir}/test/resources</directory>
-      </testResource>
-    </testResources>
 
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
+          <source>1.7</source>
+          <target>1.7</target>
         </configuration>
       </plugin>
 
