@@ -66,5 +66,5 @@ android {
 }
 
 dependencies {
-    compile 'com.incoming-media:incoming-push-video-library:0.0.14'
+    compile 'com.incoming-media:incoming-push-video-library:0.0.16'
 }

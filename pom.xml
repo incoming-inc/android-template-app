@@ -8,10 +8,10 @@
   <name>Incoming Push Video Notification Template</name>
   <description>Simple template application to demonstrate how to integrate the Incoming Push Video Notification SDK.</description>
   <packaging>apk</packaging> <!-- android:apk -->
-  <version>0.0.15-SNAPSHOT</version>
+  <version>0.0.16-SNAPSHOT</version>
 
   <properties>
-    <pvn.version>0.0.14</pvn.version>
+    <pvn.version>0.0.16</pvn.version>
 
     <!-- Specify the Android keystore to sign the release profile build -->
     <!-- <android.keystore>__path_to_keystore__</android.keystore> <android.storepass>__storepass__</android.storepass> <android.keypass>__keypass__</android.keypass> 
@@ -101,7 +101,7 @@
       <plugin>
         <groupId>com.jayway.maven.plugins.android.generation2</groupId>
         <artifactId>android-maven-plugin</artifactId>
-        <version>3.9.0-rc.2</version>
+        <version>3.9.0-rc.3</version>
         <extensions>true</extensions>
         <configuration>
           <sdk>
