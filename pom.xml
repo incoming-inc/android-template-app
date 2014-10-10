@@ -26,7 +26,7 @@
       <!-- Access to the Incoming release repo is not restricted -->
       <id>incoming-release-repo</id>
       <name>Incoming release repo</name>
-      <url>https://repository-incoming.forge.cloudbees.com/release/</url>
+      <url>http://107.178.209.67:8081/nexus/content/repositories/releases/</url>
     </repository>
   </repositories>
 
@@ -150,13 +150,7 @@
     </pluginManagement>
 
 
-    <extensions>
-      <extension>
-        <groupId>org.apache.maven.wagon</groupId>
-        <artifactId>wagon-webdav-jackrabbit</artifactId>
-        <version>2.4</version>
-      </extension>
-    </extensions>
+   
   </build>
 
   <profiles>
