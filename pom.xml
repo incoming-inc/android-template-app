@@ -85,10 +85,7 @@
   </dependencies>
 
   <build>
-    <!-- Customise source, test, and resources locations because we are not using the standard convention src/main/java, 
-      src/test/java, src/test/resources -->
-    <sourceDirectory>${project.basedir}/src</sourceDirectory>
-
+   
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -101,9 +98,14 @@
       <plugin>
         <groupId>com.jayway.maven.plugins.android.generation2</groupId>
         <artifactId>android-maven-plugin</artifactId>
-        <version>3.9.0-rc.3</version>
+        <version>4.0.0-rc.1</version>
         <extensions>true</extensions>
         <configuration>
+          <!-- Customise source, test, and resources locations because ADT expects this arrangement and cannot be configured. -->
+    	<sourceDirectory>${project.basedir}/src</sourceDirectory>
+          <resourceDirectory>${project.basedir}/res</resourceDirectory>
+          <assetsDirectory>${project.basedir}/assets</assetsDirectory>
+          <androidManifestFile>${project.basedir}/AndroidManifest.xml</androidManifestFile>
           <sdk>
             <path>${env.ANDROID_HOME}</path>
             <platform>19</platform>
@@ -133,7 +135,7 @@
                   <pluginExecutionFilter>
                     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                     <artifactId>android-maven-plugin</artifactId>
-                    <versionRange>[3.9.0-rc.2,)</versionRange>
+                    <versionRange>[4.0.0-rc.1,)</versionRange>
                     <goals>
                       <goal>consume-aar</goal>
                     </goals>
