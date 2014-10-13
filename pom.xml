@@ -11,7 +11,7 @@
   <version>0.0.16-SNAPSHOT</version>
 
   <properties>
-    <pvn.version>0.0.16</pvn.version>
+    <pvn.version>0.0.21</pvn.version>
 
     <!-- Specify the Android keystore to sign the release profile build -->
     <!-- <android.keystore>__path_to_keystore__</android.keystore> <android.storepass>__storepass__</android.storepass> <android.keypass>__keypass__</android.keypass> 

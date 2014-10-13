@@ -12,7 +12,7 @@ allprojects {
         jcenter()
         mavenCentral()
         maven {
-            url "https://repository-incoming.forge.cloudbees.com/release/"
+            url "http://107.178.209.67:8081/nexus/content/repositories/releases/"
         }
     }
 }
@@ -66,5 +66,5 @@ android {
 }
 
 dependencies {
-    compile 'com.incoming-media:incoming-push-video-library:0.0.16'
+    compile 'com.incoming-media:incoming-push-video-library:0.0.21'
 }
