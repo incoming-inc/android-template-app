@@ -85,6 +85,7 @@
   </dependencies>
 
   <build>
+   	<sourceDirectory>${project.basedir}/src</sourceDirectory>
    
     <plugins>
       <plugin>
@@ -103,7 +104,7 @@
         <extensions>true</extensions>
         <configuration>
           <!-- Customise source, test, and resources locations because ADT expects this arrangement and cannot be configured. -->
-    	<sourceDirectory>${project.basedir}/src</sourceDirectory>
+   
           <resourceDirectory>${project.basedir}/res</resourceDirectory>
           <assetsDirectory>${project.basedir}/assets</assetsDirectory>
           <androidManifestFile>${project.basedir}/AndroidManifest.xml</androidManifestFile>
