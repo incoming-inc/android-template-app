@@ -66,6 +66,7 @@ android {
 }
 
 dependencies {
+
     compile 'com.incoming-media:incoming-push-video-library:0.1.14'
     compile 'com.android.support:appcompat-v7:21.0.0'
     compile 'com.google.android.gms:play-services:6.1.11'

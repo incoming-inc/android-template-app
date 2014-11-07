@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="incoming_pvn_endpoint">YOUR_ENDPOINT_HERE</string>
+    <string name="incoming_pvn_project_key">YOUR_PROJECT_KEY_HERE</string>
+</resources>

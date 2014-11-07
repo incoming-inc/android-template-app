@@ -1,261 +1,207 @@
 <!-- Copyright (c) Incoming Pty. Ltd. 2014 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.incoming</groupId>
-  <artifactId>android-pvn-template</artifactId>
-  <name>Incoming Push Video Notification Template</name>
-  <description>Simple template application to demonstrate how to integrate the Incoming Push Video Notification SDK.</description>
-  <packaging>apk</packaging> <!-- android:apk -->
-  <version>0.0.16-SNAPSHOT</version>
+	<groupId>com.incoming</groupId>
+	<artifactId>android-pvn-template</artifactId>
+	<name>Incoming Push Video Notification Template</name>
+	<description>Simple template application to demonstrate how to integrate the Incoming Push Video Notification SDK.</description>
+	<packaging>apk</packaging> <!-- android:apk -->
+	<version>0.0.16-SNAPSHOT</version>
 
-  <properties>
-    <pvn.version>0.0.16</pvn.version>
+	<properties>
+		<pvn.version>0.1.14-SNAPSHOT</pvn.version>
+		<android.support.version>21.0.0</android.support.version>
+		<play-services.version>6.1.11</play-services.version>
+	</properties>
 
-    <!-- Specify the Android keystore to sign the release profile build -->
-    <!-- <android.keystore>__path_to_keystore__</android.keystore> <android.storepass>__storepass__</android.storepass> <android.keypass>__keypass__</android.keypass> 
-      <android.alias>__alias__</android.alias> -->
+	<repositories>
 
-    <!-- Debug (logging, no proguard optimisation) is the default build. Over-ridden in the release profile. -->
-    <app_name_suffix>-debug</app_name_suffix>
-  </properties>
+		<repository>
+			<id>android-local</id>
+			<name>Android Local</name>
+			<url>file:///${env.ANDROID_HOME}/extras/android/m2repository/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>google-local</id>
+			<name>Google Local</name>
+			<url>file:///${env.ANDROID_HOME}/extras/google/m2repository/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
 
-  <repositories>
-    <repository>
-      <!-- Access to the Incoming release repo is not restricted -->
-      <id>incoming-release-repo</id>
-      <name>Incoming release repo</name>
-      <url>http://107.178.209.67:8081/nexus/content/repositories/releases/</url>
-    </repository>
-  </repositories>
+		<repository>
+			<!-- Access to the Incoming release repo is not restricted -->
+			<id>incoming-release-repo</id>
+			<name>Incoming release repo</name>
+			<url>http://107.178.209.67:8081/nexus/content/repositories/releases/</url>
+		</repository>
+	</repositories>
 
-  <!-- Defines the dependency versions used by this project. -->
-  <dependencyManagement>
-    <dependencies>
+	<!-- Defines the dependency versions used by this project. -->
+	<dependencyManagement>
+		<dependencies>
 
-      <dependency>
-        <groupId>android</groupId>
-        <artifactId>android</artifactId>
-        <version>4.4.2_r3</version>
-      </dependency>
+			<dependency>
+				<groupId>android</groupId>
+				<artifactId>android</artifactId>
+				<version>L_r4</version>
+			</dependency>
 
-      <dependency>
-        <groupId>com.incoming-media</groupId>
-        <artifactId>incoming-push-video-library</artifactId>
-        <version>${pvn.version}</version>
-        <type>aar</type>
-      </dependency>
+			<dependency>
+				<groupId>com.android.support</groupId>
+				<artifactId>support-v4</artifactId>
+				<version>${android.support.version}</version>
+				<type>aar</type>
+			</dependency>
 
-      <!-- Provides access to the compiled class files when using m2e-android. See https://code.google.com/p/android/issues/detail?id=59183#c8 -->
-      <dependency>
-        <groupId>com.incoming-media</groupId>
-        <artifactId>incoming-push-video-library</artifactId>
-        <version>${pvn.version}</version>
-        <type>jar</type>
-        <scope>provided</scope>
-      </dependency>
+			<dependency>
+				<groupId>com.google.android.gms</groupId>
+				<artifactId>play-services</artifactId>
+				<version>${play-services.version}</version>
+				<type>aar</type>
+			</dependency>
 
-    </dependencies>
-  </dependencyManagement>
+			<dependency>
+				<groupId>com.incoming-media</groupId>
+				<artifactId>incoming-push-video-library</artifactId>
+				<version>${pvn.version}</version>
+				<type>aar</type>
+			</dependency>
 
-  <!-- Defines the dependencies used by this project. -->
-  <dependencies>
-    <dependency>
-      <groupId>android</groupId>
-      <artifactId>android</artifactId>
-      <scope>provided</scope>
-      <type>jar</type>
-    </dependency>
+			<!-- Provides access to the compiled class files when using m2e-android. 
+				See https://code.google.com/p/android/issues/detail?id=59183#c8 -->
+			<dependency>
+				<groupId>com.incoming-media</groupId>
+				<artifactId>incoming-push-video-library</artifactId>
+				<version>${pvn.version}</version>
+				<type>jar</type>
+				<scope>provided</scope>
+			</dependency>
 
-    <dependency>
-      <groupId>com.incoming-media</groupId>
-      <artifactId>incoming-push-video-library</artifactId>
-      <type>aar</type>
-    </dependency>
+		</dependencies>
+	</dependencyManagement>
 
-    <!-- Provides access to the compiled class files when using m2e-android. See https://code.google.com/p/android/issues/detail?id=59183#c8 -->
-    <dependency>
-      <groupId>com.incoming-media</groupId>
-      <artifactId>incoming-push-video-library</artifactId>
-      <type>jar</type>
-      <scope>provided</scope>
-    </dependency>
+	<!-- Defines the dependencies used by this project. -->
+	<dependencies>
+		<dependency>
+			<groupId>android</groupId>
+			<artifactId>android</artifactId>
+			<scope>provided</scope>
+			<type>jar</type>
+		</dependency>
 
-  </dependencies>
+		<dependency>
+			<groupId>com.incoming-media</groupId>
+			<artifactId>incoming-push-video-library</artifactId>
+			<type>aar</type>
+		</dependency>
 
-  <build>
-    <!-- Customise source, test, and resources locations because we are not using the standard convention src/main/java, 
-      src/test/java, src/test/resources -->
-    <sourceDirectory>${project.basedir}/src</sourceDirectory>
+		<dependency>
+			<groupId>com.android.support</groupId>
+			<artifactId>support-v4</artifactId>
+			<type>aar</type>
+		</dependency>
 
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
-        </configuration>
-      </plugin>
-
-      <plugin>
-        <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-        <artifactId>android-maven-plugin</artifactId>
-        <version>3.9.0-rc.3</version>
-        <extensions>true</extensions>
-        <configuration>
-          <sdk>
-            <path>${env.ANDROID_HOME}</path>
-            <platform>19</platform>
-          </sdk>
-          <undeployBeforeDeploy>true</undeployBeforeDeploy>
-          <manifest>
-            <debuggable>true</debuggable>
-            <!-- Sets the version to that of this maven project -->
-            <versionName />
-          </manifest>
-        </configuration>
-      </plugin>
-    </plugins>
-
-    <pluginManagement>
-      <plugins>
-        <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build 
-          itself. -->
-        <plugin>
-          <groupId>org.eclipse.m2e</groupId>
-          <artifactId>lifecycle-mapping</artifactId>
-          <version>1.0.0</version>
-          <configuration>
-            <lifecycleMappingMetadata>
-              <pluginExecutions>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-                    <artifactId>android-maven-plugin</artifactId>
-                    <versionRange>[3.9.0-rc.2,)</versionRange>
-                    <goals>
-                      <goal>consume-aar</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
-              </pluginExecutions>
-            </lifecycleMappingMetadata>
-          </configuration>
-        </plugin>
-      </plugins>
-    </pluginManagement>
+		<dependency>
+			<groupId>com.google.android.gms</groupId>
+			<artifactId>play-services</artifactId>
+			<type>aar</type>
+			<exclusions>
+				<exclusion>
+					<groupId>com.android.support</groupId>
+					<artifactId>support-v4</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 
 
-   
-  </build>
+		<!-- Provides access to the compiled class files when using m2e-android. 
+			See https://code.google.com/p/android/issues/detail?id=59183#c8 -->
+		<!-- <dependency> <groupId>com.incoming-media</groupId> <artifactId>incoming-push-video-library</artifactId> 
+			<type>jar</type> <scope>provided</scope> </dependency> -->
+	</dependencies>
 
-  <profiles>
-    <!-- release profile. Disable logging etc -->
-    <profile>
-      <id>release</id>
-      <properties>
-        <app_name_suffix />
-        <disable_debug>true</disable_debug>
-      </properties>
-      <build>
-        <plugins>
+	<build>
+		<sourceDirectory>${project.basedir}/src</sourceDirectory>
 
-          <!-- As described at https://code.google.com/p/maven-android-plugin/wiki/SigningAPKWithMavenJarsigner -->
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jarsigner-plugin</artifactId>
-            <version>1.2</version>
-            <executions>
-              <execution>
-                <id>signing</id>
-                <goals>
-                  <goal>sign</goal>
-                  <goal>verify</goal>
-                </goals>
-                <phase>package</phase>
-                <inherited>true</inherited>
-                <configuration>
-                  <archiveDirectory />
-                  <includes>
-                    <include>target/*.apk</include>
-                  </includes>
-                  <keystore>${android.keystore}</keystore>
-                  <storepass>${android.storepass}</storepass>
-                  <keypass>${android.keypass}</keypass>
-                  <alias>${android.alias}</alias>
-                  <verbose>true</verbose>
-                  <arguments>
-                    <argument>-sigalg</argument>
-                    <argument>MD5withRSA</argument>
-                    <argument>-digestalg</argument>
-                    <argument>SHA1</argument>
-                  </arguments>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
 
-          <plugin>
-            <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-            <artifactId>android-maven-plugin</artifactId>
-            <dependencies>
-              <dependency>
-                <groupId>net.sf.proguard</groupId>
-                <artifactId>proguard-base</artifactId>
-                <version>4.11</version>
-              </dependency>
-            </dependencies>
-            <inherited>true</inherited>
-            <configuration>
-              <!-- Uncomment the following block when an official Android certificate is used. This will avoid signing the 
-                APK with the debug certificate. -->
-              <sign>
-                <debug>false</debug>
-              </sign>
-              <zipalign>
-                <skip>false</skip>
-                <verbose>false</verbose>
-                <inputApk>${project.build.directory}/${project.build.finalName}.apk</inputApk>
-                <outputApk>${project.build.directory}/${project.build.finalName}-signed-aligned.apk
-                </outputApk>
-              </zipalign>
+			<plugin>
+				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+				<artifactId>android-maven-plugin</artifactId>
+				<version>4.0.0-rc.2</version>
+				<extensions>true</extensions>
+				<configuration>
+					<!-- Customise source, test, and resources locations because ADT expects 
+						this arrangement and cannot be configured. -->
 
-              <manifest>
-                <debuggable>false</debuggable>
-                <versionCodeAutoIncrement>true</versionCodeAutoIncrement>
-              </manifest>
+					<resourceDirectory>${project.basedir}/res</resourceDirectory>
+					<assetsDirectory>${project.basedir}/assets</assetsDirectory>
+					<androidManifestFile>${project.basedir}/AndroidManifest.xml</androidManifestFile>
+					<sdk>
+						<path>${env.ANDROID_HOME}</path>
+						<platform>21</platform>
+					</sdk>
+					<undeployBeforeDeploy>true</undeployBeforeDeploy>
+					<manifest>
+						<debuggable>true</debuggable>
+						<!-- Sets the version to that of this maven project -->
+						<versionName />
+					</manifest>
+				</configuration>
+			</plugin>
+		</plugins>
 
-              <proguard>
-                <skip>false</skip>
-                <config>proguard.cfg</config>
-              </proguard>
-            </configuration>
-            <executions>
-              <execution>
-                <id>manifestUpdate</id>
-                <phase>process-resources</phase>
-                <goals>
-                  <goal>manifest-update</goal>
-                </goals>
-              </execution>
-              <execution>
-                <id>alignApk</id>
-                <phase>package</phase>
-                <goals>
-                  <goal>zipalign</goal>
-                </goals>
-              </execution>
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+										<artifactId>android-maven-plugin</artifactId>
+										<versionRange>[4.0.0-rc.1,)</versionRange>
+										<goals>
+											<goal>consume-aar</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
+
+
+	</build>
+
+
 
 </project>
 
