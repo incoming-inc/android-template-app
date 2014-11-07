@@ -12,7 +12,7 @@ allprojects {
         jcenter()
         mavenCentral()
         maven {
-            url "https://repository-incoming.forge.cloudbees.com/release/"
+            url "http://107.178.209.67:8081/nexus/content/repositories/releases/"
         }
     }
 }
@@ -25,12 +25,12 @@ dependencies {
 }
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "20.0.0"
+    compileSdkVersion 21
+    buildToolsVersion "21.1.0"
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 19
+        targetSdkVersion 21
     }
 
     sourceSets {
@@ -66,5 +66,7 @@ android {
 }
 
 dependencies {
-    compile 'com.incoming-media:incoming-push-video-library:0.0.16'
+    compile 'com.incoming-media:incoming-push-video-library:0.1.14'
+    compile 'com.android.support:appcompat-v7:21.0.0'
+    compile 'com.google.android.gms:play-services:6.1.11'
 }

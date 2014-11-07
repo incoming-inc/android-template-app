@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--   Copyright (c) Incoming Pty. Ltd. 2014 --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="39" android:versionName="0.0.16-SNAPSHOT" package="com.incoming.example.incomingpvntemplate">
 
-    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
 
     <!-- Begin PVN permission configuration -->
 
