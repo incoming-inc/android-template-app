@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--   Copyright (c) Incoming Pty. Ltd. 2014 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true" >
+
+    <com.incoming.au.uiframework.CustomVideoView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/video_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" >
+
+        <!-- No constraints on image size specified by policy so enforce a sensible maximum size. -->
+        <ImageView
+            android:id="@+id/player_branding_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:maxHeight="72dp"
+            android:maxWidth="72dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/pvn_notification_overlay_icon" />
+
+        <LinearLayout
+            android:id="@+id/video_actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/video_action_watch"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/pvn_notification_icon"
+                android:text="@string/video_action_watch"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/video_action_play"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/ic_media_play"
+                android:text="@string/video_action_play"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/video_action_record"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/ic_popup_sync"
+                android:text="@string/video_action_record"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/video_action_remind"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/ic_popup_reminder"
+                android:maxLines="1"
+                android:text="@string/video_action_remind"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

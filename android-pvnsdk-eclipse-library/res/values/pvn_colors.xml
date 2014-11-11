@@ -1,0 +1,8 @@
+<!--
+  Copyright (c) Incoming Pty. Ltd. 2014
+-->
+<resources>
+    <color name="black_overlay">#66000000</color>
+    <color name="notification_overlay_stripes">#8C8C8C</color>
+    <color name="video_action_icons">#ff69b4</color>
+</resources>
