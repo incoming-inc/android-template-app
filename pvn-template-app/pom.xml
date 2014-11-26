@@ -11,9 +11,9 @@
 	<version>0.0.16-SNAPSHOT</version>
 
 	<properties>
-		<pvn.version>0.1.14-SNAPSHOT</pvn.version>
+		<pvn.version>0.1.23</pvn.version>
 		<android.support.version>21.0.2</android.support.version>
-		<play-services.version>6.1.11</play-services.version>
+		<play-services.version>6.1.71</play-services.version>
 	</properties>
 
 	<repositories>
