@@ -12,7 +12,7 @@
 
 	<properties>
 		<pvn.version>0.1.14-SNAPSHOT</pvn.version>
-		<android.support.version>21.0.0</android.support.version>
+		<android.support.version>21.0.2</android.support.version>
 		<play-services.version>6.1.11</play-services.version>
 	</properties>
 
@@ -50,7 +50,7 @@
 			<dependency>
 				<groupId>android</groupId>
 				<artifactId>android</artifactId>
-				<version>L_r4</version>
+				<version>5.0_r1</version>
 			</dependency>
 
 			<dependency>
@@ -133,7 +133,7 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
+				<version>3.2</version>
 				<configuration>
 					<source>1.7</source>
 					<target>1.7</target>
