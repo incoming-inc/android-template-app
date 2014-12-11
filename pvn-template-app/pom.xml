@@ -17,24 +17,6 @@
 	</properties>
 
 	<repositories>
-
-		<repository>
-			<id>android-local</id>
-			<name>Android Local</name>
-			<url>file:///${env.ANDROID_HOME}/extras/android/m2repository/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>google-local</id>
-			<name>Google Local</name>
-			<url>file:///${env.ANDROID_HOME}/extras/google/m2repository/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-
 		<repository>
 			<!-- Access to the Incoming release repo is not restricted -->
 			<id>incoming-release-repo</id>
@@ -62,9 +44,16 @@
 
 			<dependency>
 				<groupId>com.google.android.gms</groupId>
-				<artifactId>play-services</artifactId>
-				<version>${play-services.version}</version>
+				<artifactId>play-services-base</artifactId>
 				<type>aar</type>
+				<version>${play-services.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.google.android.gms</groupId>
+				<artifactId>play-services-location</artifactId>
+				<type>aar</type>
+				<version>${play-services.version}</version>
 			</dependency>
 
 			<dependency>
