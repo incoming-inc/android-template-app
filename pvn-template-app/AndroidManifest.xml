@@ -37,7 +37,7 @@
 
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
 
-        <activity android:configChanges="orientation" android:exported="true" android:name="com.incoming.au.uiframework.VideoViewPlayer" android:screenOrientation="landscape">
+        <activity android:configChanges="orientation" android:exported="true" android:name="com.incoming.au.uiframework.VideoViewPlayer" android:screenOrientation="sensorLandscape">
         </activity>
 
         <receiver android:name="com.incoming.au.sdk.push.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
