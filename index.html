@@ -148,20 +148,20 @@
 <h2>
 <a id="configure-the-sdk-initialization-code" class="anchor" href="#configure-the-sdk-initialization-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configure the SDK Initialization Code</h2>
 
-<p>The PVN SDK may be configured in the application launch Activity onCreate(),</p>
+<p>The Push Video SDK may be configured in the application launch Activity onCreate(),</p>
 
 <pre><code>// Optionally activate SDK logging
 LogIncoming.setDevBuild(true);
-PushVideoAppRunner appRunner = new PushVideoAppRunner(getApplicationContext(),”API ENDPOINT”, “PROJECT KEY”);
-appRunner.configure();
+PushVideo pushVideo = new PushVideo(getApplicationContext(),”API ENDPOINT”, “PROJECT KEY”);
+pushVideo.configure();
 </code></pre>
 
 <p>or in the main Application class onCreate():</p>
 
 <pre><code>// Optionally activate SDK logging
 LogIncoming.setDevBuild(true);
-PushVideoAppRunner appRunner = new PushVideoAppRunner(this, ”API ENDPOINT”, “PROJECT KEY”);
-appRunner.configure();
+PushVideo pushVideo = new PushVideo(this, ”API ENDPOINT”, “PROJECT KEY”);
+pushVideo.configure();
 </code></pre>
 
 <h2>
