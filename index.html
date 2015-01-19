@@ -109,7 +109,8 @@
 <pre><code>dependencies {
     compile 'com.incoming-media:incoming-push-video-library:${pvn.version}'
     compile 'com.android.support:support-v4:21.0.2'
-    compile 'com.google.android.gms:play-services:6.1.71'
+    compile 'com.google.android.gms:play-services-location:6.5.87'
+    compile 'com.google.android.gms:play-services-base:6.5.87'
 }
 </code></pre>
 
@@ -131,9 +132,16 @@
 
 &lt;dependency&gt;
   &lt;groupId&gt;com.google.android.gms&lt;/groupId&gt;
-  &lt;artifactId&gt;play-services&lt;/artifactId&gt;
-  &lt;version&gt;${play-services.version}&lt;/version&gt;
+  &lt;artifactId&gt;play-services-base&lt;/artifactId&gt;
   &lt;type&gt;aar&lt;/type&gt;
+  &lt;version&gt;${play-services.version}&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+  &lt;groupId&gt;com.google.android.gms&lt;/groupId&gt;
+  &lt;artifactId&gt;play-services-location&lt;/artifactId&gt;
+  &lt;type&gt;aar&lt;/type&gt;
+  &lt;version&gt;${play-services.version}&lt;/version&gt;
 &lt;/dependency&gt;
 </code></pre>
 
@@ -155,6 +163,9 @@ LogIncoming.setDevBuild(true);
 PushVideoAppRunner appRunner = new PushVideoAppRunner(this, ”API ENDPOINT”, “PROJECT KEY”);
 appRunner.configure();
 </code></pre>
+
+<h2>
+<a id="update-the-manifest" class="anchor" href="#update-the-manifest" aria-hidden="true"><span class="octicon octicon-link"></span></a>Update the Manifest</h2>
 
 <h1>
 <a id="api-documentation" class="anchor" href="#api-documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>API Documentation</h1>
