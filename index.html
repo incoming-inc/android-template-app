@@ -31,7 +31,47 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <p><a href="apidocs/index.html">PVN SDK API Documentation</a></p>
+        <h1>
+<a id="new-project-using-template-application" class="anchor" href="#new-project-using-template-application" aria-hidden="true"><span class="octicon octicon-link"></span></a>New Project Using Template Application</h1>
+
+<h2>
+<a id="clone-the-template-application" class="anchor" href="#clone-the-template-application" aria-hidden="true"><span class="octicon octicon-link"></span></a>Clone the Template Application</h2>
+
+<p>Clone the Android template application at <a href="https://github.com/incoming-inc/android-template-app">https://github.com/incoming-inc/android-template-app</a>.</p>
+
+<p>The Push Video template application is in the directory <code>pvn-template-app</code> and provides both Gradle and Maven build scripts.</p>
+
+<h2>
+<a id="import-the-project" class="anchor" href="#import-the-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Import the project</h2>
+
+<h3>
+<a id="gradleandroid-studio" class="anchor" href="#gradleandroid-studio" aria-hidden="true"><span class="octicon octicon-link"></span></a>Gradle/Android Studio</h3>
+
+<p>A Gradle build file (build.gradle) is supplied with the template Application at <a href="https://github.com/incoming-inc/android-template-app">https://github.com/incoming-inc/android-template-app</a>. It requires Gradle 2.1.</p>
+
+<h3>
+<a id="maven" class="anchor" href="#maven" aria-hidden="true"><span class="octicon octicon-link"></span></a>Maven</h3>
+
+<p>The Push Video Notification template application contains a maven pom file that can be used to build the application.</p>
+
+<p>The following build commands assume maven is installed:</p>
+
+<ul>
+<li>Build a debug APK file: <code>mvn clean install</code>.</li>
+<li>Build a debug APK file, deploy to the attached device, and run: <code>mvn clean install android:deploy android:run</code> </li>
+</ul>
+
+<p>Note that the first time the build is executed the Maven Android Plugin and other build tools will be downloaded as necessary. <a href="http://maven.apache.org/download.cgi">Maven (version 3.2.X)</a> must be installed beforehand.</p>
+
+<h2>
+<a id="configure-your-push-video-project-key" class="anchor" href="#configure-your-push-video-project-key" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configure Your Push Video Project Key</h2>
+
+<p>Add the project configuration file <code>incoming_android_sdk.xml</code> supplied to the <code>res</code> directory of the application.</p>
+
+<h1>
+<a id="api-documentation" class="anchor" href="#api-documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>API Documentation</h1>
+
+<p><a href="apidocs/index.html">PVN SDK API Documentation</a></p>
       </section>
     </div>
 
