@@ -167,6 +167,56 @@ appRunner.configure();
 <h2>
 <a id="update-the-manifest" class="anchor" href="#update-the-manifest" aria-hidden="true"><span class="octicon octicon-link"></span></a>Update the Manifest</h2>
 
+<p>Add the video player activities and broadcast receiver configuration to the application section of the Android manifest.</p>
+
+<h2>
+<a id="configure-settings-optional" class="anchor" href="#configure-settings-optional" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configure Settings (Optional)</h2>
+
+<p>If the host application does not use any setting then a new activity may be added.</p>
+
+<pre><code>import android.app.Activity;
+import android.os.Bundle;
+
+import com.incoming.settings.PVNSettingsFragment;
+
+public class PVCSettingsActivity extends Activity {
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+
+    // Display the fragment as the main content.
+    getFragmentManager().beginTransaction().replace(android.R.id.content, new PVNSettingsFragment()).commit();
+  }
+}
+</code></pre>
+
+<p>If the preference activity is declared in <code>AndroidManifest.xml</code> with the intent filter the user can access the settings with a long press on a notification. This feature is available with Lollipop and the configuration is ignored by older versions of Android.</p>
+
+<pre><code>&lt;activity android:label="Settings" android:name=".PVCSettingsActivity"&gt;
+  &lt;intent-filter&gt;
+    &lt;action android:name="android.intent.action.MAIN"/&gt;
+    &lt;category android:name="android.intent.category.NOTIFICATION_PREFERENCES"/&gt;
+  &lt;/intent-filter&gt;
+&lt;/activity&gt;
+</code></pre>
+
+<p>Alternatively, if the host application already uses preferences then the Push Video preferences may be added to the preferences XML file:</p>
+
+<pre><code>&lt;PreferenceCategory android:title="Push Video Preferences" &gt;
+    &lt;SwitchPreference
+        android:defaultValue="true"
+        android:key="NOTIFICATION_DISPLAY_ACTIVE"
+        android:summary="@string/pref_notifications_summary"
+        android:title="@string/action_notifications_active" /&gt;
+    &lt;SwitchPreference
+        android:defaultValue="true"
+        android:key="PREF_DOWNLOAD_ENABLED"
+        android:summary="@string/pref_notifications_summary"
+        android:title="@string/download_enabled" /&gt;
+&lt;/PreferenceCategory&gt;
+</code></pre>
+
 <h1>
 <a id="api-documentation" class="anchor" href="#api-documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>API Documentation</h1>
 
