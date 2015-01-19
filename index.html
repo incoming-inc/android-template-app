@@ -69,6 +69,35 @@
 <p>Add the project configuration file <code>incoming_android_sdk.xml</code> supplied to the <code>res</code> directory of the application.</p>
 
 <h1>
+<a id="add-to-existing-project" class="anchor" href="#add-to-existing-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Add to Existing Project</h1>
+
+<h2>
+<a id="configure-access-to-the-push-video-repository" class="anchor" href="#configure-access-to-the-push-video-repository" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configure Access to the Push Video Repository</h2>
+
+<p>Gradle:</p>
+
+<p><code>allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven {
+            url "http://107.178.209.67:8081/nexus/content/repositories/releases/"
+        }
+    }
+}</code></p>
+
+<p>Maven:</p>
+
+<p><code>&lt;repositories&gt;
+  &lt;repository&gt;
+    &lt;!-- Access to the Incoming release repo is not restricted --&gt;
+    &lt;id&gt;incoming-release-repo&lt;/id&gt;
+    &lt;name&gt;Incoming release repo&lt;/name&gt;
+    &lt;url&gt;http://107.178.209.67:8081/nexus/content/repositories/releases/&lt;/url&gt;
+  &lt;/repository&gt;
+&lt;/repositories&gt;</code></p>
+
+<h1>
 <a id="api-documentation" class="anchor" href="#api-documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>API Documentation</h1>
 
 <p><a href="apidocs/index.html">PVN SDK API Documentation</a></p>
