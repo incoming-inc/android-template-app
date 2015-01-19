@@ -74,6 +74,8 @@
 <h2>
 <a id="configure-access-to-the-push-video-repository" class="anchor" href="#configure-access-to-the-push-video-repository" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configure Access to the Push Video Repository</h2>
 
+<p>The android support library and Google Play services need to be added if they are not used already. AppCompat-v7 references support-v4 so may be used in place of support-v4.</p>
+
 <p>Gradle:</p>
 
 <pre><code>allprojects {
@@ -133,6 +135,25 @@
   &lt;version&gt;${play-services.version}&lt;/version&gt;
   &lt;type&gt;aar&lt;/type&gt;
 &lt;/dependency&gt;
+</code></pre>
+
+<h2>
+<a id="configure-the-sdk-initialization-code" class="anchor" href="#configure-the-sdk-initialization-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configure the SDK Initialization Code</h2>
+
+<p>The PVN SDK may be configured in the application launch Activity onCreate(),</p>
+
+<pre><code>// Optionally activate SDK logging
+LogIncoming.setDevBuild(true);
+PushVideoAppRunner appRunner = new PushVideoAppRunner(getApplicationContext(),”API ENDPOINT”, “PROJECT KEY”);
+appRunner.configure();
+</code></pre>
+
+<p>or in the main Application class onCreate():</p>
+
+<pre><code>// Optionally activate SDK logging
+LogIncoming.setDevBuild(true);
+PushVideoAppRunner appRunner = new PushVideoAppRunner(this, ”API ENDPOINT”, “PROJECT KEY”);
+appRunner.configure();
 </code></pre>
 
 <h1>
