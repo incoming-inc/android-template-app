@@ -11,7 +11,7 @@
 	<version>0.0.16-SNAPSHOT</version>
 
 	<properties>
-		<pvn.version>0.1.29</pvn.version>
+		<pvn.version>1.1.1</pvn.version>
 		<android.support.version>21.0.2</android.support.version>
 		<play-services.version>6.5.87</play-services.version>
 	</properties>
@@ -132,9 +132,9 @@
 			</plugin>
 
 			<plugin>
-				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+				<groupId>com.simpligility.maven.plugins</groupId>
 				<artifactId>android-maven-plugin</artifactId>
-				<version>4.0.0-rc.2</version>
+				<version>4.1.0</version>
 				<extensions>true</extensions>
 				<configuration>
 					<!-- Customise source, test, and resources locations because ADT expects 
@@ -170,9 +170,9 @@
 							<pluginExecutions>
 								<pluginExecution>
 									<pluginExecutionFilter>
-										<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+										<groupId>com.simpligility.maven.plugins</groupId>
 										<artifactId>android-maven-plugin</artifactId>
-										<versionRange>[4.0.0-rc.1,)</versionRange>
+										<versionRange>[4.1.0,)</versionRange>
 										<goals>
 											<goal>consume-aar</goal>
 										</goals>

@@ -8,9 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 
-import com.incoming.au.foundation.PushVideoAppRunner;
 import com.incoming.au.foundation.tool.LogIncoming;
-
+import com.incoming.pvnsdk.PushVideo;
 
 
 public class PVNTemplateActivity extends Activity {
@@ -28,9 +27,8 @@ public class PVNTemplateActivity extends Activity {
     String projectKey = getResources().getString(R.string.incoming_pvn_project_key);
 
     LogIncoming.setDevBuild(true);
-    PushVideoAppRunner appRunner = new PushVideoAppRunner(getApplicationContext(), endPoint, projectKey);
-    appRunner.configure();
-    
+    PushVideo.initialize(getApplicationContext(), endPoint, projectKey);
+
     Log.i(TAG, "Launched the Incoming Push Video Notification SDK");
 
   }
