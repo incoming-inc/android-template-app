@@ -67,6 +67,15 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <!-- Optional settings activity -->
+        <activity android:label="Settings" android:name=".PVNTemplateSettings">
+            <intent-filter>
+                <!-- This intent filter makes the settings accessible with a long press on the notification when running Lollipop -->
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.NOTIFICATION_PREFERENCES"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
