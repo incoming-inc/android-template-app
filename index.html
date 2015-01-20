@@ -152,16 +152,14 @@
 
 <pre><code>// Optionally activate SDK logging
 LogIncoming.setDevBuild(true);
-PushVideo pushVideo = new PushVideo(getApplicationContext(),”API ENDPOINT”, “PROJECT KEY”);
-pushVideo.configure();
+PushVideo.initialize(getApplicationContext(), ”API ENDPOINT”, “PROJECT KEY”);
 </code></pre>
 
 <p>or in the main Application class onCreate():</p>
 
 <pre><code>// Optionally activate SDK logging
 LogIncoming.setDevBuild(true);
-PushVideo pushVideo = new PushVideo(this, ”API ENDPOINT”, “PROJECT KEY”);
-pushVideo.configure();
+PushVideo.initialize(this, ”API ENDPOINT”, “PROJECT KEY”);
 </code></pre>
 
 <h2>
