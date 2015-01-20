@@ -8,11 +8,11 @@
 	<name>Incoming Push Video Notification Template</name>
 	<description>Simple template application to demonstrate how to integrate the Incoming Push Video Notification SDK.</description>
 	<packaging>apk</packaging> <!-- android:apk -->
-	<version>0.0.16-SNAPSHOT</version>
+	<version>1.1.1-SNAPSHOT</version>
 
 	<properties>
 		<pvn.version>1.1.1</pvn.version>
-		<android.support.version>21.0.2</android.support.version>
+		<android.support.version>21.0.3</android.support.version>
 		<play-services.version>6.5.87</play-services.version>
 	</properties>
 
