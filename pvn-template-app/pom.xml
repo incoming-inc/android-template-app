@@ -197,6 +197,7 @@
                                         <versionRange>[4.1.0,)</versionRange>
                                         <goals>
                                             <goal>consume-aar</goal>
+                                            <goal>emma</goal>
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
