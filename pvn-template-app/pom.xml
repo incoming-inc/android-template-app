@@ -1,199 +1,216 @@
 <!-- Copyright (c) Incoming Pty. Ltd. 2014 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.incoming</groupId>
-	<artifactId>android-pvn-template</artifactId>
-	<name>Incoming Push Video Notification Template</name>
-	<description>Simple template application to demonstrate how to integrate the Incoming Push Video Notification SDK.</description>
-	<packaging>apk</packaging> <!-- android:apk -->
-	<version>1.1.1-SNAPSHOT</version>
+    <groupId>com.incoming</groupId>
+    <artifactId>android-pvn-template</artifactId>
+    <name>Incoming Push Video Notification Template</name>
+    <description>Simple template application to demonstrate how to integrate the Incoming Push Video
+        Notification SDK.
+    </description>
+    <packaging>apk</packaging>
+    <!-- android:apk -->
+    <version>1.1.2-SNAPSHOT</version>
 
-	<properties>
-		<pvn.version>1.1.1</pvn.version>
-		<android.support.version>21.0.3</android.support.version>
-		<play-services.version>6.5.87</play-services.version>
-	</properties>
+    <properties>
+        <pvn.version>1.1.2</pvn.version>
+        <android.support.version>21.0.3</android.support.version>
+        <play-services.version>6.5.87</play-services.version>
+    </properties>
 
-	<repositories>
-		<repository>
-			<!-- Access to the Incoming release repo is not restricted -->
-			<id>incoming-release-repo</id>
-			<name>Incoming release repo</name>
-			<url>http://107.178.209.67:8081/nexus/content/repositories/releases/</url>
-		</repository>
-	</repositories>
+    <repositories>
+        <repository>
+            <!-- Access to the Incoming release repo is not restricted -->
+            <id>incoming-release-repo</id>
+            <name>Incoming release repo</name>
+            <url>http://107.178.209.67:8081/nexus/content/repositories/releases/</url>
+        </repository>
+    </repositories>
 
-	<!-- Defines the dependency versions used by this project. -->
-	<dependencyManagement>
-		<dependencies>
+    <!-- Defines the dependency versions used by this project. -->
+    <dependencyManagement>
+        <dependencies>
 
-			<dependency>
-				<groupId>android</groupId>
-				<artifactId>android</artifactId>
-				<version>5.0_r1</version>
-			</dependency>
+            <dependency>
+                <groupId>android</groupId>
+                <artifactId>android</artifactId>
+                <version>5.0_r1</version>
+            </dependency>
 
-			<dependency>
-				<groupId>com.android.support</groupId>
-				<artifactId>support-v4</artifactId>
-				<version>${android.support.version}</version>
-				<type>aar</type>
-			</dependency>
+            <dependency>
+                <groupId>com.android.support</groupId>
+                <artifactId>support-v4</artifactId>
+                <version>${android.support.version}</version>
+                <type>aar</type>
+            </dependency>
 
-			<dependency>
-				<groupId>com.google.android.gms</groupId>
-				<artifactId>play-services-base</artifactId>
-				<type>aar</type>
-				<version>${play-services.version}</version>
-			</dependency>
+            <dependency>
+                <groupId>com.google.android.gms</groupId>
+                <artifactId>play-services-base</artifactId>
+                <type>aar</type>
+                <version>${play-services.version}</version>
+            </dependency>
 
-			<dependency>
-				<groupId>com.google.android.gms</groupId>
-				<artifactId>play-services-location</artifactId>
-				<type>aar</type>
-				<version>${play-services.version}</version>
-			</dependency>
+            <dependency>
+                <groupId>com.google.android.gms</groupId>
+                <artifactId>play-services-location</artifactId>
+                <type>aar</type>
+                <version>${play-services.version}</version>
+            </dependency>
 
-			<dependency>
-				<groupId>com.incoming-media</groupId>
-				<artifactId>incoming-push-video-library</artifactId>
-				<version>${pvn.version}</version>
-				<type>aar</type>
-			</dependency>
+            <dependency>
+                <groupId>com.incoming-media</groupId>
+                <artifactId>incoming-push-video-sdk</artifactId>
+                <version>${pvn.version}</version>
+                <type>aar</type>
+            </dependency>
 
-			<!-- Provides access to the compiled class files when using m2e-android. 
-				See https://code.google.com/p/android/issues/detail?id=59183#c8 -->
-			<dependency>
-				<groupId>com.incoming-media</groupId>
-				<artifactId>incoming-push-video-library</artifactId>
-				<version>${pvn.version}</version>
-				<type>jar</type>
-				<scope>provided</scope>
-			</dependency>
+            <!-- Provides access to the compiled class files when using m2e-android.
+                See https://code.google.com/p/android/issues/detail?id=59183#c8 -->
+            <dependency>
+                <groupId>com.incoming-media</groupId>
+                <artifactId>incoming-push-video-sdk</artifactId>
+                <version>${pvn.version}</version>
+                <type>jar</type>
+                <scope>provided</scope>
+            </dependency>
 
-		</dependencies>
-	</dependencyManagement>
+        </dependencies>
+    </dependencyManagement>
 
-	<!-- Defines the dependencies used by this project. -->
-	<dependencies>
-		<dependency>
-			<groupId>android</groupId>
-			<artifactId>android</artifactId>
-			<scope>provided</scope>
-			<type>jar</type>
-		</dependency>
+    <!-- Defines the dependencies used by this project. -->
+    <dependencies>
+        <dependency>
+            <groupId>android</groupId>
+            <artifactId>android</artifactId>
+            <scope>provided</scope>
+            <type>jar</type>
+        </dependency>
 
-		<dependency>
-			<groupId>com.incoming-media</groupId>
-			<artifactId>incoming-push-video-library</artifactId>
-			<type>aar</type>
-		</dependency>
+        <dependency>
+            <groupId>com.incoming-media</groupId>
+            <artifactId>incoming-push-video-sdk</artifactId>
+            <type>aar</type>
+        </dependency>
 
+        <!--
 		<dependency>
 			<groupId>com.android.support</groupId>
 			<artifactId>support-v4</artifactId>
 			<type>aar</type>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.android.support</groupId>
+                    <artifactId>support-annotations</artifactId>
+                </exclusion>
+            </exclusions>
 		</dependency>
+		-->
 
-		<dependency>
-			<groupId>com.google.android.gms</groupId>
-			<artifactId>play-services-base</artifactId>
-			<type>aar</type>
+        <dependency>
+            <groupId>com.google.android.gms</groupId>
+            <artifactId>play-services-base</artifactId>
+            <type>aar</type>
+            <exclusions>
+                <!-- Work around play services referencing an old version of support-annotations -->
+                <exclusion>
+                    <groupId>com.android.support</groupId>
+                    <artifactId>support-annotations</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
 
-		</dependency>
-
-		<dependency>
-			<groupId>com.google.android.gms</groupId>
-			<artifactId>play-services-location</artifactId>
-			<type>aar</type>
-
-		</dependency>
-
-
-		<!-- Provides access to the compiled class files when using m2e-android. 
-			See https://code.google.com/p/android/issues/detail?id=59183#c8 -->
-		<!-- <dependency> <groupId>com.incoming-media</groupId> <artifactId>incoming-push-video-library</artifactId> 
-			<type>jar</type> <scope>provided</scope> </dependency> -->
-	</dependencies>
-
-	<build>
-		<sourceDirectory>${project.basedir}/src</sourceDirectory>
-
-		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.2</version>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>com.simpligility.maven.plugins</groupId>
-				<artifactId>android-maven-plugin</artifactId>
-				<version>4.1.0</version>
-				<extensions>true</extensions>
-				<configuration>
-					<!-- Customise source, test, and resources locations because ADT expects 
-						this arrangement and cannot be configured. -->
-
-					<resourceDirectory>${project.basedir}/res</resourceDirectory>
-					<assetsDirectory>${project.basedir}/assets</assetsDirectory>
-					<androidManifestFile>${project.basedir}/AndroidManifest.xml</androidManifestFile>
-					<sdk>
-						<path>${env.ANDROID_HOME}</path>
-						<platform>21</platform>
-					</sdk>
-					<undeployBeforeDeploy>true</undeployBeforeDeploy>
-					<manifest>
-						<debuggable>true</debuggable>
-						<!-- Sets the version to that of this maven project -->
-						<versionName />
-					</manifest>
-				</configuration>
-			</plugin>
-		</plugins>
-
-		<pluginManagement>
-			<plugins>
-				<!--This plugin's configuration is used to store Eclipse m2e settings 
-					only. It has no influence on the Maven build itself. -->
-				<plugin>
-					<groupId>org.eclipse.m2e</groupId>
-					<artifactId>lifecycle-mapping</artifactId>
-					<version>1.0.0</version>
-					<configuration>
-						<lifecycleMappingMetadata>
-							<pluginExecutions>
-								<pluginExecution>
-									<pluginExecutionFilter>
-										<groupId>com.simpligility.maven.plugins</groupId>
-										<artifactId>android-maven-plugin</artifactId>
-										<versionRange>[4.1.0,)</versionRange>
-										<goals>
-											<goal>consume-aar</goal>
-										</goals>
-									</pluginExecutionFilter>
-									<action>
-										<ignore />
-									</action>
-								</pluginExecution>
-							</pluginExecutions>
-						</lifecycleMappingMetadata>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
+        <dependency>
+            <groupId>com.google.android.gms</groupId>
+            <artifactId>play-services-location</artifactId>
+            <type>aar</type>
+        </dependency>
 
 
+        <!-- Provides access to the compiled class files when using m2e-android.
+            See https://code.google.com/p/android/issues/detail?id=59183#c8 -->
+        <dependency>
+            <groupId>com.incoming-media</groupId>
+            <artifactId>incoming-push-video-sdk</artifactId>
+            <type>jar</type>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
-	</build>
+    <build>
+        <sourceDirectory>${project.basedir}/src</sourceDirectory>
 
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.2</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
 
+            <plugin>
+                <groupId>com.simpligility.maven.plugins</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <version>4.1.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <!-- Customise source, test, and resources locations because ADT expects
+                        this arrangement and cannot be configured. -->
 
+                    <resourceDirectory>${project.basedir}/res</resourceDirectory>
+                    <assetsDirectory>${project.basedir}/assets</assetsDirectory>
+                    <androidManifestFile>${project.basedir}/AndroidManifest.xml
+                    </androidManifestFile>
+                    <sdk>
+                        <path>${env.ANDROID_HOME}</path>
+                        <platform>21</platform>
+                    </sdk>
+                    <undeployBeforeDeploy>true</undeployBeforeDeploy>
+                    <manifest>
+                        <debuggable>true</debuggable>
+                        <!-- Sets the version to that of this maven project -->
+                        <versionName />
+                    </manifest>
+                </configuration>
+            </plugin>
+        </plugins>
+
+        <pluginManagement>
+            <plugins>
+                <!--This plugin's configuration is used to store Eclipse m2e settings
+                    only. It has no influence on the Maven build itself. -->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>com.simpligility.maven.plugins</groupId>
+                                        <artifactId>android-maven-plugin</artifactId>
+                                        <versionRange>[4.1.0,)</versionRange>
+                                        <goals>
+                                            <goal>consume-aar</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+    </build>
 </project>
 
 
