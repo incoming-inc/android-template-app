@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-  Copyright (c) Incoming Pty. Ltd. 2014
--->
-<resources>
-    <!-- Incoming Notifications -->
-    <style name="NotificationText" parent="android:TextAppearance.StatusBar.EventContent" />
-    <style name="NotificationTitle" parent="android:TextAppearance.StatusBar.EventContent.Title" />
-</resources>
