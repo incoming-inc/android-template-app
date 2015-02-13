@@ -169,7 +169,68 @@ PushVideo.initialize(this, ”API ENDPOINT”, “PROJECT KEY”);
 <h2>
 <a id="update-the-manifest" class="anchor" href="#update-the-manifest" aria-hidden="true"><span class="octicon octicon-link"></span></a>Update the Manifest</h2>
 
-<p>Add the video player activities and broadcast receiver configuration to the application section of the Android manifest.</p>
+<p>Add the permissions, video player activities and broadcast receiver configuration to the application section of the Android manifest.</p>
+
+<h3>
+<a id="permissions" class="anchor" href="#permissions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Permissions</h3>
+
+<pre><code>&lt;!-- Begin PVN permission configuration --&gt;
+&lt;!-- Permissions required for GCM --&gt;
+&lt;uses-permission android:name="android.permission.GET_ACCOUNTS"/&gt;
+&lt;uses-permission android:name="android.permission.WAKE_LOCK"/&gt;
+&lt;uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/&gt;
+&lt;uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/&gt;
+&lt;!-- Replace com.example.incomingpvntemplate with application package name --&gt;
+&lt;permission android:name="com.example.incomingpvntemplate.permission.C2D_MESSAGE" android:protectionLevel="signature"/&gt;
+
+&lt;!-- Replace com.incoming.example.incomingpvntemplate with application package name --&gt;
+&lt;uses-permission android:name="com.incoming.example.incomingpvntemplate.permission.C2D_MESSAGE"/&gt;
+
+&lt;!-- Required to store downloaded videos --&gt;
+&lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/&gt;
+&lt;uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/&gt;
+
+&lt;!-- Check Wi-fi state for download --&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/&gt;
+&lt;uses-permission android:name="android.permission.INTERNET"/&gt;
+&lt;uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/&gt;
+
+&lt;!-- End PVN permission configuration --&gt;
+</code></pre>
+
+<h3>
+<a id="broadcast-receiver-configuration-and-video-player-activity-coinfiguration" class="anchor" href="#broadcast-receiver-configuration-and-video-player-activity-coinfiguration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Broadcast Receiver Configuration And Video Player Activity Coinfiguration</h3>
+
+<pre><code> &lt;application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme"&gt;
+
+    &lt;!-- Begin PVN configuration --&gt;
+
+    &lt;meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/&gt;
+
+    &lt;activity android:configChanges="orientation" android:exported="true" android:name="com.incoming.au.uiframework.VideoViewPlayer" android:screenOrientation="sensorLandscape"&gt;
+    &lt;/activity&gt;
+
+    &lt;receiver android:name="com.incoming.au.sdk.notification.NotificationBroadcastReceiver"&gt;
+        &lt;intent-filter&gt;
+            &lt;action android:name="com.incoming.notif.check"/&gt;
+            &lt;action android:name="com.incoming.feed.check" /&gt;
+            &lt;action android:name="com.incoming.download.trigger"/&gt;
+            &lt;action android:name="com.android.vending.INSTALL_REFERRER"/&gt;
+            &lt;action android:name="android.intent.action.BOOT_COMPLETED"/&gt;
+            &lt;action android:name="android.intent.action.DOWNLOAD_COMPLETE"/&gt;
+            &lt;action android:name="com.google.android.c2dm.intent.RECEIVE"/&gt;
+
+            &lt;!-- Replace com.incoming.example.incomingpvntemplate with application package name --&gt;
+            &lt;category android:name="com.incoming.example.incomingpvntemplate"/&gt;
+        &lt;/intent-filter&gt;
+    &lt;/receiver&gt;
+
+    &lt;service android:name="com.incoming.au.sdk.PVNIntentService"/&gt;
+
+    &lt;!-- End PVN configuration --&gt;
+</code></pre>
 
 <h2>
 <a id="configure-settings-optional" class="anchor" href="#configure-settings-optional" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configure Settings (Optional)</h2>
