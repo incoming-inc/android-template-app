@@ -9,7 +9,7 @@
 	<classpathentry exported="true" kind="lib" path="libs/jackson-annotations-2.2.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="libs/jackson-core-2.2.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="libs/jackson-databind-2.2.3.jar"/>
-	<classpathentry kind="lib" path="libs/incoming-push-video-library-0.1.23.jar"/>
-	<classpathentry kind="lib" path="libs/incoming-pvn-sdk-0.1.23.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/incoming-push-video-sdk-1.1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/incoming-pvn-sdk-1.1.2.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
