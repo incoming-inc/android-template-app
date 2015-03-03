@@ -33,5 +33,7 @@ Set the Push Video SDK version to 1.2.7 in the dependencies section of `pom.xml`
 
 ## Eclipse
 
-
-Adjust classpath to use new versioned jars.
+ 1. Remove the old Push Video SDK JAR files from the `libs` directory.
+ 1. Add the Push Video SDk version 1.2.7 JAR files to the `libs` directory.
+ 1. Adjust classpath to use new versioned jars.
+ 1. Restart Eclipse.
