@@ -3,7 +3,6 @@ title: Configure Settings
 layout: default
 ---
 
-## Configure Settings (Optional)
 
 If the host application does not use any setting then a new activity may be added.
 
