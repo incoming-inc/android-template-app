@@ -3,9 +3,8 @@ title: Release Notes
 layout: default 
 ---
  
-# Changelog
 
-## Version 1.2.7 (March 4, 2015) 
+# Version 1.2.7 (March 4, 2015) 
 
  * Add serendipity to recommendation from content learning to allow the user to discover videos from new topics and genres even after learning.
  * Deep linking into the host application after video playback completes.
