@@ -3,7 +3,7 @@ buildscript {
        jcenter()    
 }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.0.0'
+        classpath 'com.android.tools.build:gradle:1.1.0'
     }
 }
 
@@ -33,6 +33,8 @@ android {
         targetSdkVersion 21
     }
 
+    // Configure source locations compatible with Eclipse to permit a single source of the template
+    // application for both IDEs. The default Gradle locations may be used if Eclipse is not used.
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -66,7 +68,7 @@ android {
 }
 
 dependencies {
-    compile 'com.incoming-media:incoming-push-video-sdk:1.1.2'
+    compile 'com.incoming-media:incoming-push-video-sdk:1.2.7'
     compile 'com.android.support:support-v4:21.0.3'
     compile 'com.google.android.gms:play-services-location:6.5.87'
     compile 'com.google.android.gms:play-services-base:6.5.87'
