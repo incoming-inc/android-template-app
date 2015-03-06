@@ -30,4 +30,4 @@ Note that the first time the build is executed the Maven Android Plugin and othe
 
 # Configure Your Push Video Project Key
 
-Add the API endpoint and project key specified in your Push Video Control panel project to the configuration file [`incoming_android_sdk.xml`]({{site.github.repository_url}}/pvn-template-app/res/values/incoming_android_sdk.xml).
+Add the API endpoint and project key specified in your Push Video Control panel project to the configuration file [`incoming_android_sdk.xml`]({{site.github.repository_url}}/tree/master/pvn-template-app/res/values/incoming_android_sdk.xml).
