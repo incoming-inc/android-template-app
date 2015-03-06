@@ -6,7 +6,7 @@ layout: default
 
 # Clone the Template Application
 
-Clone the Android template application at https://github.com/incoming-inc/android-template-app.
+Clone the [Android template application]({{site.github.repository_url}}).
 
 The Push Video template application is in the directory `pvn-template-app` and provides both Gradle and Maven build scripts.
 
@@ -30,4 +30,4 @@ Note that the first time the build is executed the Maven Android Plugin and othe
 
 # Configure Your Push Video Project Key
 
-Add the project configuration file `incoming_android_sdk.xml` supplied to the `res` directory of the application.
+Add the API endpoint and project key specified in your Push Video Control panel project to the configuration file [`incoming_android_sdk.xml`]({{site.github.repository_url}}/pvn-template-app/res/values/incoming_android_sdk.xml).
