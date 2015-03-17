@@ -167,7 +167,7 @@
                     </androidManifestFile>
                     <sdk>
                         <path>${env.ANDROID_HOME}</path>
-                        <platform>21</platform>
+                        <platform>22</platform>
                     </sdk>
                     <undeployBeforeDeploy>true</undeployBeforeDeploy>
                     <manifest>
