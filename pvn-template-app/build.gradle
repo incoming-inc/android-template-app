@@ -32,6 +32,7 @@ android {
         targetSdkVersion 22
     }
 
+    //
     // Configure source locations compatible with Eclipse to permit a single source of the template
     // application for both IDEs. The default Gradle locations may be used if Eclipse is not used.
     sourceSets {
