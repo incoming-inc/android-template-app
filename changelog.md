@@ -14,3 +14,9 @@ layout: default
    * Fix issue where videos with an underscore in the id were treated as if they were orphaned when this was not the case.
    * Add a short backoff when commencing downloads to avoid potential problems if two beoadcasts occur at once (e.g. a duplicate download complete broadcast).
    * Move processing of user presence changes from the UI thread to a worker thread to avoid the risk of ANRs.
+
+If using Android manifest merging, it is necessary to disable a reference to non-existent broadcast receiver that was included in the Push Video SDK AAR. This can be done by adding the following to the application section of the manifest:
+
+    <receiver android:name="com.incoming.pv.GcmBroadcastReceiver" tools:node="remove">
+    </receiver>
+
