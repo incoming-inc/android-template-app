@@ -20,3 +20,6 @@ If using Android manifest merging, it is necessary to disable a reference to non
     <receiver android:name="com.incoming.pv.GcmBroadcastReceiver" tools:node="remove">
     </receiver>
 
+# Version 1.2.8 (April 10, 2015) 
+
+ * Add a default notification ticker text so the host application is not forced to override the placeholder text.
