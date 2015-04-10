@@ -68,7 +68,7 @@ android {
 }
 
 dependencies {
-    compile 'com.incoming-media:incoming-push-video-sdk:1.2.7'
+    compile 'com.incoming-media:incoming-push-video-sdk:1.2.8'
     compile 'com.android.support:support-v4:22.0.0'
     compile 'com.google.android.gms:play-services-location:7.0.0'
     compile 'com.google.android.gms:play-services-base:7.0.0'
