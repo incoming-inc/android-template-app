@@ -1,6 +1,6 @@
 <!--
-  Copyright (c) Incoming Pty. Ltd. 2014
+  Copyright (c) Incoming Pty. Ltd. 2015
 -->
 <resources>
-    <integer name="google_play_services_version">6587000</integer>
+    <integer name="google_play_services_version">7095000</integer>
 </resources>
