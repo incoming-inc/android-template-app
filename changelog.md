@@ -23,3 +23,7 @@ If using Android manifest merging, it is necessary to disable a reference to non
 # Version 1.2.8 (April 10, 2015) 
 
  * Add a default notification ticker text so the host application is not forced to override the placeholder text.
+
+# Version 1.2.9 (April 13, 2015) 
+
+ * Add support for Google Play Services API 7.0.0, and above. This version is not required for host applications using older verions of the Play Services API.
