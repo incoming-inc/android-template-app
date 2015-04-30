@@ -13,7 +13,6 @@ Gradle:
     allprojects {
         repositories {
             jcenter()
-            mavenCentral()
             maven {
                 url "http://107.178.209.67:8081/nexus/content/repositories/releases/"
             }
