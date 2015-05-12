@@ -35,10 +35,10 @@ Maven:
 Gradle:
 
     dependencies {
-        compile 'com.incoming-media:incoming-push-video-sdk:1.1.2'
-        compile 'com.android.support:support-v4:21.0.3'
-        compile 'com.google.android.gms:play-services-location:6.5.87'
-        compile 'com.google.android.gms:play-services-base:6.5.87'
+        compile 'com.incoming-media:incoming-push-video-sdk:1.3.13'
+        compile 'com.android.support:support-v4:22.1.1'
+        compile 'com.google.android.gms:play-services-location:7.3.0'
+        compile 'com.google.android.gms:play-services-base:7.3.0'
     }
 
 Maven:
@@ -46,7 +46,7 @@ Maven:
     <dependency>
       <groupId>com.incoming-media</groupId>
       <artifactId>incoming-push-video-sdk</artifactId>
-      <version>1.1.2</version>
+      <version>1.3.13</version>
       <type>aar</type>
      </dependency>
 
@@ -75,14 +75,10 @@ Maven:
 
 The Push Video SDK may be configured in the application launch Activity onCreate(),
 
-    // Optionally activate SDK logging
-    LogIncoming.setDevBuild(true);
     PushVideo.initialize(getApplicationContext(), ”API ENDPOINT”, “PROJECT KEY”);
     
 or in the main Application class onCreate():
 
-    // Optionally activate SDK logging
-    LogIncoming.setDevBuild(true);
     PushVideo.initialize(this, ”API ENDPOINT”, “PROJECT KEY”);
 
 # Update the Manifest
@@ -113,8 +109,7 @@ Add the permissions, video player activities and broadcast receiver configuratio
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
-
+   
     <!-- End PVN permission configuration -->
 
 ##Broadcast Receiver Configuration And Video Player Activity Coinfiguration
