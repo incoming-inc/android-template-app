@@ -2,8 +2,8 @@
 <!--   Copyright (c) Incoming Pty. Ltd. 2015 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          android:versionCode="41"
-          android:versionName="1.2.1-SNAPSHOT"
+          android:versionCode="42"
+          android:versionName="1.3.0-SNAPSHOT"
           package="com.incoming.example.incomingpvntemplate">
 
     <!-- Begin PVN permission configuration -->
@@ -29,7 +29,6 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
 
     <!-- End PVN permission configuration -->
 
@@ -56,11 +55,6 @@
                 <category android:name="com.incoming.example.incomingpvntemplate"/>
             </intent-filter>
         </receiver>
-
-        <!--  Remove non-existent broadcast receiver declared in the AAR manifest. This is resolved in the 1.3 release. -->
-        <receiver android:name="com.incoming.pv.GcmBroadcastReceiver" tools:node="remove">
-        </receiver>
-
 
         <service android:name="com.incoming.au.sdk.PVNIntentService"/>
 
