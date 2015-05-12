@@ -27,3 +27,9 @@ If using Android manifest merging, it is necessary to disable a reference to non
 # Version 1.2.9 (April 13, 2015) 
 
  * Add support for Google Play Services API 7.0.0, and above. This version is not required for host applications using older verions of the Play Services API.
+
+# Version 1.3.13 (May 12, 2015)
+
+ * Introduce third-party advertising SDK support, including sample integrations for AdColony and Millenial Media.
+ * Extended analytics and error tracking.
+ * Minor updates to feed paring to support Kaltura OVP.
