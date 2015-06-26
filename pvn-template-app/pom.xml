@@ -16,7 +16,7 @@
 
     <properties>
         <pvn.version>1.3.13</pvn.version>
-        <android.support.version>22.1.1</android.support.version>
+        <android.support.version>22.2.0</android.support.version>
         <play-services.version>7.5.0</play-services.version>
     </properties>
 
@@ -148,7 +148,7 @@
             <plugin>
                 <groupId>com.simpligility.maven.plugins</groupId>
                 <artifactId>android-maven-plugin</artifactId>
-                <version>4.2.0</version>
+                <version>4.3.0</version>
                 <extensions>true</extensions>
                 <configuration>
                     <!-- Customise source, test, and resources locations because ADT expects
@@ -187,7 +187,7 @@
                                     <pluginExecutionFilter>
                                         <groupId>com.simpligility.maven.plugins</groupId>
                                         <artifactId>android-maven-plugin</artifactId>
-                                        <versionRange>[4.1.0,)</versionRange>
+                                        <versionRange>[4.2.0,)</versionRange>
                                         <goals>
                                             <goal>consume-aar</goal>
                                             <goal>emma</goal>
