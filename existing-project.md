@@ -98,7 +98,6 @@ Add the permissions, video player activities and broadcast receiver configuratio
 
     <!-- Begin PVN permission configuration -->
     <!-- Permissions required for GCM -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
