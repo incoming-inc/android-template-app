@@ -33,3 +33,9 @@ If using Android manifest merging, it is necessary to disable a reference to non
  * Introduce third-party advertising SDK support, including sample integrations for AdColony and Millenial Media.
  * Extended analytics and error tracking.
  * Minor updates to feed paring to support Kaltura OVP.
+
+# Version 1.4.27 (June 30, 2015)
+
+ * Prepare for optional permissions in Android M.
+ * Add the ability to enable/disable the use of location for learning and analytics at runtime.
+ * Improvements to notification timing using machine learning.
