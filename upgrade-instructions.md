@@ -87,7 +87,7 @@ Set the Push Video SDK version to 1.4.28 in the dependencies section of `build.g
       compile 'com.google.android.gms:play-services-base:7.5.0'
     }
 
-The recommended Google Play Services version specified in the manifest for version 7.5.0 should be 7571000.
+The recommended Google Play Services version specified in the manifest for version 7.5.0 is 7571000.
 
 ## Maven
 
@@ -99,6 +99,6 @@ Set the Push Video SDK version to 1.4.28 in the dependencies section of `pom.xml
         <play-services.version>7.5.0</play-services.version>
     </properties>
 
-The recommended Google Play Services version specified in the manifest for version 7.5.0 should be 7571000.
+The recommended Google Play Services version specified in the manifest for version 7.5.0 is 7571000.
 
 
