@@ -15,7 +15,7 @@
     <version>1.3.0-SNAPSHOT</version>
 
     <properties>
-        <pvn.version>1.3.13</pvn.version>
+        <pvn.version>1.4.28</pvn.version>
         <android.support.version>22.2.0</android.support.version>
         <play-services.version>7.5.0</play-services.version>
     </properties>
