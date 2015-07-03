@@ -34,7 +34,7 @@ If using Android manifest merging, it is necessary to disable a reference to non
  * Extended analytics and error tracking.
  * Minor updates to feed paring to support Kaltura OVP.
 
-# Version 1.4.27 (June 30, 2015)
+# Version 1.4.28 (July 3, 2015)
 
  * Prepare for optional permissions in Android M.
  * Add the ability to enable/disable the use of location for learning and analytics at runtime.
