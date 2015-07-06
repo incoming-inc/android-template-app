@@ -12,10 +12,10 @@
     </description>
     <packaging>apk</packaging>
     <!-- android:apk -->
-    <version>1.3.0-SNAPSHOT</version>
+    <version>1.4.0-SNAPSHOT</version>
 
     <properties>
-        <pvn.version>1.4.28</pvn.version>
+        <pvn.version>1.4.29</pvn.version>
         <android.support.version>22.2.0</android.support.version>
         <play-services.version>7.5.0</play-services.version>
     </properties>
@@ -114,13 +114,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
-        <dependency>
-            <groupId>com.google.android.gms</groupId>
-            <artifactId>play-services-location</artifactId>
-            <type>aar</type>
-        </dependency>
-
 
         <!-- Provides access to the compiled class files when using m2e-android.
             See https://code.google.com/p/android/issues/detail?id=59183#c8 -->
