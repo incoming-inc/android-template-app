@@ -35,9 +35,8 @@ Maven:
 Gradle:
 
     dependencies {
-        compile 'com.incoming-media:incoming-push-video-sdk:1.3.13'
-        compile 'com.android.support:support-v4:22.1.1'
-        compile 'com.google.android.gms:play-services-location:7.5.0'
+        compile 'com.incoming-media:incoming-push-video-sdk:1.4.29'
+        compile 'com.android.support:support-v4:22.2.0'
         compile 'com.google.android.gms:play-services-base:7.5.0'
         compile 'com.google.android.gms:play-services-gcm:7.5.0'
     }
@@ -47,7 +46,7 @@ Maven:
     <dependency>
       <groupId>com.incoming-media</groupId>
       <artifactId>incoming-push-video-sdk</artifactId>
-      <version>1.3.13</version>
+      <version>1.4.29</version>
       <type>aar</type>
      </dependency>
 
@@ -61,13 +60,6 @@ Maven:
     <dependency>
       <groupId>com.google.android.gms</groupId>
       <artifactId>play-services-base</artifactId>
-      <type>aar</type>
-      <version>${play-services.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.google.android.gms</groupId>
-      <artifactId>play-services-location</artifactId>
       <type>aar</type>
       <version>${play-services.version}</version>
     </dependency>
