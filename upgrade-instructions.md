@@ -102,3 +102,36 @@ Set the Push Video SDK version to 1.4.29 in the dependencies section of `pom.xml
 The recommended Google Play Services version specified in the manifest for version 7.5.0 is 7571000.
 
 
+# Version 1.5.7 (July 27, 2015) 
+
+## API changes
+
+No breaking API changes are introduced in this release.
+	
+## Android Studio/Gradle
+
+Set the Push Video SDK version to 1.5.7 in the dependencies section of `build.gradle`. e.g.
+
+    dependencies {
+      compile 'com.incoming-media:incoming-push-video-sdk:1.5.7'
+      compile 'com.android.support:support-v4:22.2.1'
+      compile 'com.google.android.gms:play-services-location:7.5.0'
+      compile 'com.google.android.gms:play-services-base:7.5.0'
+    }
+
+The recommended Google Play Services version is 7.5.0, which requires a manifest version of 7571000.
+
+
+## Maven
+
+Set the Push Video SDK version to 1.5.7 in the dependencies section of `pom.xml`. e.g.
+
+    <properties>
+        <pvn.version>1.5.7</pvn.version>
+        <android.support.version>22.2.1</android.support.version>
+        <play-services.version>7.5.0</play-services.version>
+    </properties>
+
+The recommended Google Play Services version is 7.5.0, which requires specified a manifest version of 7571000.
+
+

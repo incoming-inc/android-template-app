@@ -39,3 +39,8 @@ If using Android manifest merging, it is necessary to disable a reference to non
  * Prepare for optional permissions in Android M.
  * Add the ability to enable/disable the use of location for learning and analytics at runtime.
  * Improvements to notification timing using machine learning.
+
+# Version 1.5.8 (July 27, 2015)
+
+ * Re-enable Activity Recognition now deprecated API has been removed by Google
+ * Enable querying of why a video received a score.

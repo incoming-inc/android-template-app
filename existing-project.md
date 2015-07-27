@@ -32,13 +32,17 @@ Maven:
 
 ## Add the library dependencies
 
+NOTE: Google Play Service version 6.5.0 ore greater is required.
+
 Gradle:
 
     dependencies {
-        compile 'com.incoming-media:incoming-push-video-sdk:1.4.29'
-        compile 'com.android.support:support-v4:22.2.0'
+        compile 'com.incoming-media:incoming-push-video-sdk:1.5.7'
+        compile 'com.android.support:support-v4:22.2.1'
         compile 'com.google.android.gms:play-services-base:7.5.0'
         compile 'com.google.android.gms:play-services-gcm:7.5.0'
+        // For Activity Recognition
+        compile 'com.google.android.gms:play-services-location:7.5.0'
     }
 
 Maven:
@@ -46,7 +50,7 @@ Maven:
     <dependency>
       <groupId>com.incoming-media</groupId>
       <artifactId>incoming-push-video-sdk</artifactId>
-      <version>1.4.29</version>
+      <version>1.5.7</version>
       <type>aar</type>
      </dependency>
 
@@ -67,6 +71,13 @@ Maven:
     <dependency>
       <groupId>com.google.android.gms</groupId>
       <artifactId>play-services-gcm</artifactId>
+      <type>aar</type>
+      <version>${play-services.version}</version>
+    </dependency>
+  
+     <dependency>
+      <groupId>com.google.android.gms</groupId>
+      <artifactId>play-services-location</artifactId>
       <type>aar</type>
       <version>${play-services.version}</version>
     </dependency>
@@ -108,6 +119,9 @@ Add the permissions, video player activities and broadcast receiver configuratio
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- Activity Recognition -->
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
    
     <!-- End PVN permission configuration -->
 
