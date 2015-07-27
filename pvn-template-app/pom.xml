@@ -12,11 +12,11 @@
     </description>
     <packaging>apk</packaging>
     <!-- android:apk -->
-    <version>1.4.0-SNAPSHOT</version>
+    <version>1.5.0-SNAPSHOT</version>
 
     <properties>
-        <pvn.version>1.4.29</pvn.version>
-        <android.support.version>22.2.0</android.support.version>
+        <pvn.version>1.5.7</pvn.version>
+        <android.support.version>22.2.1</android.support.version>
         <play-services.version>7.5.0</play-services.version>
     </properties>
 
