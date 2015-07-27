@@ -5,32 +5,14 @@ package com.incoming.example.incomingpvntemplate;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 
-import com.incoming.au.foundation.tool.LogIncoming;
-import com.incoming.pvnsdk.PushVideo;
-
-
 public class PVNTemplateActivity extends Activity {
-
-  private static final String TAG = PVNTemplateActivity.class.getSimpleName();
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    Log.i(TAG, "Launching the Incoming Push Video Notification SDK");
-    
     setContentView(R.layout.activity_pvntemplate);
-
-    String endPoint = getResources().getString(R.string.incoming_pvn_endpoint);
-    String projectKey = getResources().getString(R.string.incoming_pvn_project_key);
-
-    LogIncoming.setDevBuild(true);
-    PushVideo.initialize(getApplicationContext(), endPoint, projectKey);
-
-    Log.i(TAG, "Launched the Incoming Push Video Notification SDK");
-
   }
 
   @Override
