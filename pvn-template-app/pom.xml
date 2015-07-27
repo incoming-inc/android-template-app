@@ -74,15 +74,6 @@
                 <type>aar</type>
             </dependency>
 
-            <!-- Provides access to the compiled class files when using m2e-android.
-                See https://code.google.com/p/android/issues/detail?id=59183#c8 -->
-            <dependency>
-                <groupId>com.incoming-media</groupId>
-                <artifactId>incoming-push-video-sdk</artifactId>
-                <version>${pvn.version}</version>
-                <type>jar</type>
-                <scope>provided</scope>
-            </dependency>
 
         </dependencies>
     </dependencyManagement>
@@ -115,14 +106,6 @@
             </exclusions>
         </dependency>
 
-        <!-- Provides access to the compiled class files when using m2e-android.
-            See https://code.google.com/p/android/issues/detail?id=59183#c8 -->
-        <dependency>
-            <groupId>com.incoming-media</groupId>
-            <artifactId>incoming-push-video-sdk</artifactId>
-            <type>jar</type>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 
     <build>
