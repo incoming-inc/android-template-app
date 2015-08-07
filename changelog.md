@@ -45,6 +45,6 @@ If using Android manifest merging, it is necessary to disable a reference to non
  * Re-enable Activity Recognition now deprecated API has been removed by Google
  * Enable querying of why a video received a score.
 
-# Version 1.6.12 (Ausgust 7, 2015)
+# Version 1.6.3 (Ausgust 7, 2015)
 
  * Add support for interstitial/post-roll advertisements.
