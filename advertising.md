@@ -3,7 +3,7 @@ title: Advertising SDK Integration
 layout: default 
 ---
 
-Advertising SDK support is available in version 1.3.X and above of the Push Video SDK.
+Advertising SDK support is available in version 1.3.X and above of the Push Video SDK. Version 1.6.X of thee Push Video SDK and above support interstitial/post-roll advertisements and pre-roll advertisements. Older versions only support pre-roll advertisements.
 
 The Push Video SDK provides an adapter class ([PushVideoAdManager](http://incoming-inc.github.io/android-template-app/apidocs-1.4/com/incoming/pvnsdk/PushVideoAdManager.html)) that is implemented for a specific third-party advertising SDK. 
 

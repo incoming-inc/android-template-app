@@ -37,7 +37,7 @@ NOTE: Google Play Service version 6.5.0 ore greater is required.
 Gradle:
 
     dependencies {
-        compile 'com.incoming-media:incoming-push-video-sdk:1.5.7'
+        compile 'com.incoming-media:incoming-push-video-sdk:1.6.12'
         compile 'com.android.support:support-v4:22.2.1'
         compile 'com.google.android.gms:play-services-base:7.5.0'
         compile 'com.google.android.gms:play-services-gcm:7.5.0'
@@ -50,7 +50,7 @@ Maven:
     <dependency>
       <groupId>com.incoming-media</groupId>
       <artifactId>incoming-push-video-sdk</artifactId>
-      <version>1.5.7</version>
+      <version>1.6.12</version>
       <type>aar</type>
      </dependency>
 
@@ -141,6 +141,7 @@ The permission `android.permission.ACCESS_COARSE_LOCATION` is optional in versio
         <receiver android:name="com.incoming.au.sdk.notification.NotificationBroadcastReceiver">
             <intent-filter>
                 <action android:name="com.incoming.notif.check"/>
+                <action android:name="com.incoming.playlist"/>
                 <action android:name="com.incoming.feed.check" />
                 <action android:name="com.incoming.download.trigger"/>
                 <action android:name="com.android.vending.INSTALL_REFERRER"/>
