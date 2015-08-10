@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="incoming_pvn_endpoint">__API_ENDPOINT__</string>
-    <string name="incoming_pvn_project_key">__PROJECT_KEY__</string>
+    <string name="incoming_pvn_endpoint">https://api-sandbox.incoming.tv</string>
+    <string name="incoming_pvn_project_key">5445695351816192-f03b54178948af9f95d4f72ac4c9acaba14e8f8dfbf5cb26707452a96d9ce371</string>
 </resources>

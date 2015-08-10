@@ -7,7 +7,7 @@ import com.incoming.au.foundation.tool.LogIncoming;
 import com.incoming.pvnsdk.PushVideo;
 
 /**
- *
+ * Simple Android Application class that launches the Incoming Push Video SDK.
  */
 public class PVNTemplateApplication extends Application {
 
@@ -24,6 +24,8 @@ public class PVNTemplateApplication extends Application {
     // Turn on logging (optional)
     LogIncoming.setDevBuild(true);
     PushVideo.initialize(getApplicationContext(), endPoint, projectKey);
+    // Configure optional advertising SDK
+    // PushVideo.configureAdManager(...);
 
     Log.i(TAG, "Launched the Incoming Push Video Notification SDK");
   }
