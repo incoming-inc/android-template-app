@@ -134,7 +134,7 @@ Set the Push Video SDK version to 1.5.8 in the dependencies section of `pom.xml`
 
 The recommended Google Play Services version is 7.5.0, which requires specified a manifest version of 7571000.
 
-# Version 1.6.3 (August 7, 2015) 
+# Version 1.6.9 (August 21, 2015) 
 
 ## API changes
 
@@ -147,10 +147,10 @@ to support interstitial/post-roll advertisiements.
 
 ## Android Studio/Gradle
 
-Set the Push Video SDK version to 1.6.3 in the dependencies section of `build.gradle`. e.g.
+Set the Push Video SDK version to 1.6.9 in the dependencies section of `build.gradle`. e.g.
 
     dependencies {
-      compile 'com.incoming-media:incoming-push-video-sdk:1.6.3'
+      compile 'com.incoming-media:incoming-push-video-sdk:1.6.9'
       compile 'com.android.support:support-v4:22.2.1'
       compile 'com.google.android.gms:play-services-location:7.5.0'
       compile 'com.google.android.gms:play-services-base:7.5.0'
@@ -161,10 +161,10 @@ The recommended Google Play Services version is 7.5.0, which requires a manifest
 
 ## Maven
 
-Set the Push Video SDK version to 1.6.3 in the dependencies section of `pom.xml`. e.g.
+Set the Push Video SDK version to 1.6.9 in the dependencies section of `pom.xml`. e.g.
 
     <properties>
-        <pvn.version>1.6.3</pvn.version>
+        <pvn.version>1.6.9</pvn.version>
         <android.support.version>22.2.1</android.support.version>
         <play-services.version>7.5.0</play-services.version>
     </properties>

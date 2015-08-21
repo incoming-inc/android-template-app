@@ -42,9 +42,12 @@ If using Android manifest merging, it is necessary to disable a reference to non
 
 # Version 1.5.8 (July 27, 2015)
 
- * Re-enable Activity Recognition now deprecated API has been removed by Google
+ * Re-enable Activity Recognition now deprecated API has been removed by Google.
  * Enable querying of why a video received a score.
 
-# Version 1.6.3 (Ausgust 7, 2015)
+# Version 1.6.9 (Ausgust 21, 2015)
 
  * Add support for interstitial/post-roll advertisements.
+ * Add support for ASAP download and notification of particular videos.
+ * Ensure a Looper is always created so the Push Video SDK can be initialized from a background thread that does not already have a Looper.
+	
