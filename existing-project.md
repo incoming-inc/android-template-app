@@ -92,6 +92,10 @@ or in the main Application class onCreate():
 
     PushVideo.initialize(this, ”API ENDPOINT”, “PROJECT KEY”);
 
+The Push Video server uses GCM [collapse keys](https://developers.google.com/cloud-messaging/concept-options#collapsible_and_non-collapsible_messages) to inform the Push Video SDK about new content and configuration changes.
+
+If the host application uses GCM notifications for other purposes it should ensure GCM push messages that contain the values `policy`, `static-feed`, `dynamic-feed`, or `healthcheck` for the string extra `collapse_key` are ignored.
+
 # Update the Manifest
 
 
