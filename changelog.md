@@ -51,3 +51,6 @@ If using Android manifest merging, it is necessary to disable a reference to non
  * Add support for ASAP download and notification of particular videos.
  * Ensure a Looper is always created so the Push Video SDK can be initialized from a background thread that does not already have a Looper.
 	
+# Version 1.6.10 (Ausgust 27, 2015)
+
+ * Bug Fix: Prevent applications responding to Push Video Android broadcasts that were not intended for that application when more than one application that uses the Push Video SDK is installed. This problem was introduced in 1.6 and does not apply to older versions of the Push Video SDK.
