@@ -171,6 +171,41 @@ Set the Push Video SDK version to 1.6.10 in the dependencies section of `pom.xml
 
 The recommended Google Play Services version is 7.5.0, which requires specified a manifest version of 7571000.
 
+# Version 1.8.9
+
+## API changes
+
+No breaking API changes are introduced in this release.
+
+The new optional audience segmentation feature requires some configuration to enable it, as described [here](segmentation.html).
+
+## Android Studio/Gradle
+
+Set the Push Video SDK version to 1.8.9 in the dependencies section of `build.gradle`. e.g.
+
+    dependencies {
+      compile 'com.incoming-media:incoming-push-video-sdk:1.8.9'
+      compile 'com.android.support:support-v4:23.0.1'
+      compile 'com.google.android.gms:play-services-location:7.8.0'
+      compile 'com.google.android.gms:play-services-base:7.8.0'
+      compile 'com.google.android.gms:play-services-gcm:7.8.0'
+    }
+
+The recommended Google Play Services version is 7.8.0, which requires a manifest version of 7895000.
+
+
+## Maven
+
+Set the Push Video SDK version to 1.8.9 in the dependencies section of `pom.xml`. e.g.
+
+    <properties>
+        <pvn.version>1.8.9</pvn.version>
+        <android.support.version>23.0.1</android.support.version>
+        <play-services.version>7.8.0</play-services.version>
+    </properties>
+
+The recommended Google Play Services version is 7.8.0, which requires specified a manifest version of 7895000.
+
 
 
 
