@@ -17,6 +17,7 @@ The Incoming Push Video SDK can be used in a [new project](#new-project) by clon
  * [Configure Settings](configure-settings.html)
  * [Application Re-Engagement Deep Linking](deep-linking.html)
  * [Third Party Advertising SDK Integration](advertising.html)
+ * [Audience Segmentation](segmentation.html)
 
 # API Documentation
 

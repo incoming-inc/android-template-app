@@ -15,6 +15,6 @@ No. The Push Video service uses the Incoming Media sender ID by default. The hos
 No. The Push Video SDK uses the application context, which is passed to the Push Video SDK when it configured by the host application. The Push Video SDK may be configured from either the application class or the launch activity.
 
 ### Does the Push Video SDK need to be configured from the main thread?
-No. The Push Video SDK configuration methods are lightweight and may be called from the main thread without impacting the user experience, as all substantial tasks are delegated to worker threads. The Push Video SDK may also be configured from a host application back thread or asynchronous task if that suits with the architecure of the host application.
+No. The Push Video SDK configuration methods are lightweight and may be called from the main thread without impacting the user experience, as all substantial tasks are delegated to worker threads. The Push Video SDK may also be configured from a host application back thread or asynchronous task if that suits the architecure of the host application.
 
 
