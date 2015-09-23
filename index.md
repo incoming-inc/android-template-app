@@ -21,7 +21,7 @@ The Incoming Push Video SDK can be used in a [new project](#new-project) by clon
 
 # API Documentation
 
- * [PVN SDK API Documentation](apidocs-1.6/index.html)
+ * [PVN SDK API Documentation](apidocs/index.html)
 
 # Release Notes and Upgrade Instructions
 
