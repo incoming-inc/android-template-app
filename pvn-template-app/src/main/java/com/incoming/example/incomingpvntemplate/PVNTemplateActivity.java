@@ -7,12 +7,22 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 
+import com.incoming.pvnsdk.PushVideo;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 public class PVNTemplateActivity extends Activity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_pvntemplate);
+
+    Set<String> filterKeys = new HashSet<>(Arrays.asList("AWS", "ApacheSpark", "GoogleVideos", "Stanford", "JavaScript"));
+    PushVideo.configureAudienceSegmentationKeys(filterKeys);
+
   }
 
   @Override

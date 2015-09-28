@@ -2,5 +2,27 @@
 <resources>
     <string name="app_name">Incoming PVN Template</string>
     <string name="hello_world">The Incoming Push Video Notification SDK is launched by this blank application.</string>
-    <string name="notification_ticker_text">Recommended video for you to watch now!</string>
+    <string name="notification_ticker_text">Recommended video for you to watch now!</string>\
+
+    <string name="filter_title_aws">Amazon Web Services</string>
+    <string name="filter_summary_aws">Push AWS videos</string>
+    <string name="filter_title_spark">Apache Spark</string>
+    <string name="filter_summary_spark">Push Apache Spark videos</string>
+    <string name="filter_title_stanford">Stanford</string>
+    <string name="filter_summary_stanford">Push Stanford videos</string>
+    <string name="filter_title_javascript">JavaScript</string>
+    <string name="filter_summary_javascript">Push JavaScript videos</string>
+    <string name="filter_title_google">Google Videos</string>
+    <string name="filter_summary_google">Select the Google videos you want to see</string>
+
+
+    <string-array name="filter_google_videos">
+        <item>Google Cloud Platform</item>
+        <item>Google Design</item>
+        <item>Android Developers</item>
+        <item>Google Developers</item>
+        <item>Google Chrome Developers</item>
+    </string-array>
+
+
 </resources>
