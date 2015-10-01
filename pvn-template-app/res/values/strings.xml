@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Incoming PVN Template</string>
     <string name="hello_world">The Incoming Push Video Notification SDK is launched by this blank application.</string>
-    <string name="notification_ticker_text">Recommended video for you to watch now!</string>\
+    <string name="notification_ticker_text">Recommended video for you to watch now!</string>
 
     <!-- Content targeting settings labels -->
 
