@@ -8,8 +8,7 @@ import android.os.Bundle;
 import android.preference.PreferenceFragment;
 
 /**
- * Basic settings Activity that includes the Push Video settings. An application may also embed the
- * Push Video settings in its own settings Activity.
+ * Basic settings Activity that includes the  default Push Video settings and some content targeting settings for the user.
  */
 public class PVNTemplateSettings extends Activity {
 
@@ -25,6 +24,7 @@ public class PVNTemplateSettings extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
+      // Include the content targeting settings
       addPreferencesFromResource(R.xml.preferences);
       // Include the PVN SDK settings
       addPreferencesFromResource(R.xml.pvn_preferences);

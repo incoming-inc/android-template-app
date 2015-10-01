@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
+    <!-- User settings for content targeting using the example Push Video project that contains a selection
+     of software engineering videos etc. The Push Video SDK is informed which keys to use for content targeting
+      on the PVNTemplateApplication class. -->
     <PreferenceCategory android:title="Filtering preferences" >
         <SwitchPreference
             android:defaultValue="true"
             android:key="AWS"
             android:summary="@string/filter_summary_aws"
             android:title="@string/filter_title_aws" />
+
         <SwitchPreference
             android:defaultValue="true"
             android:key="ApacheSpark"
@@ -32,9 +36,7 @@
             android:summary="@string/filter_summary_google"
             android:title="@string/filter_title_google"
             android:entries="@array/filter_google_videos"
-            android:entryValues="@array/filter_google_videos"
-
-            />
+            android:entryValues="@array/filter_google_videos"/>
     </PreferenceCategory>
 
 </PreferenceScreen>

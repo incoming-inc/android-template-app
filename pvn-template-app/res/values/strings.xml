@@ -4,6 +4,8 @@
     <string name="hello_world">The Incoming Push Video Notification SDK is launched by this blank application.</string>
     <string name="notification_ticker_text">Recommended video for you to watch now!</string>\
 
+    <!-- Content targeting settings labels -->
+
     <string name="filter_title_aws">Amazon Web Services</string>
     <string name="filter_summary_aws">Push AWS videos</string>
     <string name="filter_title_spark">Apache Spark</string>
@@ -23,6 +25,5 @@
         <item>Google Developers</item>
         <item>Google Chrome Developers</item>
     </string-array>
-
 
 </resources>
