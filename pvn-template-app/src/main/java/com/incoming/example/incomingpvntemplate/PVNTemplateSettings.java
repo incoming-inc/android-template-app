@@ -6,6 +6,7 @@ package com.incoming.example.incomingpvntemplate;
 import android.app.Activity;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
+import android.preference.PreferenceManager;
 
 /**
  * Basic settings Activity that includes the  default Push Video settings and some content targeting settings for the user.
@@ -16,8 +17,14 @@ public class PVNTemplateSettings extends Activity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    // Display the Push Video settings fragment as the main content.
+    // Display the settings fragment as the main content.
     getFragmentManager().beginTransaction().replace(android.R.id.content, new SettingsFragment()).commit();
+
+    // Apply the default values from the preferences file. This is important if application preferences are used to control audience
+    // segmentation targets.
+    PreferenceManager.setDefaultValues(PVNTemplateSettings.this, R.xml.pvn_preferences, false);
+    PreferenceManager.setDefaultValues(PVNTemplateSettings.this, R.xml.preferences, false);
+
   }
 
   public static class SettingsFragment extends PreferenceFragment {
