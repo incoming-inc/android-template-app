@@ -62,3 +62,12 @@ If using Android manifest merging, it is necessary to disable a reference to non
  * Allow unwatched videos that have been discarded due to the expiry or deadline passing to be re-considered if these are changed on the control panel.
  * Add utility method to allow the host application to check if the GCM notification is intended for the Push Video SDK.
  * Avoid posting a video notification when the user is answeing a call.
+
+# Version 1.9
+
+ * Sponsored Video
+ * asap cellular
+ * icon cropping
+ * Allow the curator to edit the notification text
+ * User targeting preferences not applied until after first edit by user
+ * Contextual bias
