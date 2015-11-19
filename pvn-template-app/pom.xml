@@ -15,7 +15,7 @@
 
     <properties>
         <pvn.version>1.8.11</pvn.version>
-        <android.support.version>23.0.1</android.support.version>
+        <android.support.version>23.1.1</android.support.version>
         <play-services.version>8.3.0</play-services.version>
     </properties>
 
