@@ -63,11 +63,10 @@ If using Android manifest merging, it is necessary to disable a reference to non
  * Add utility method to allow the host application to check if the GCM notification is intended for the Push Video SDK.
  * Avoid posting a video notification when the user is answeing a call.
 
-# Version 1.9
+# Version 1.9.11 (December 1, 2015)
 
- * Sponsored Video
- * asap cellular
- * icon cropping
- * Allow the curator to edit the notification text
- * User targeting preferences not applied until after first edit by user
- * Contextual bias
+ * Sponsored Video Support - advertisements will not be shown for videos marked as sponsored on the Incoming control panel. 
+ * Immediate Cellular Download - videos may be scheduled for immediate download and notification over cellular in the Incoming control panel.
+ * Improved notification icon sizing.
+ * Allow the curator to edit the notification text in the control panel. The video title is used by default.
+ * Defect fix for 1.8 segmentation feature:  User targeting preferences stored in Android SharedPreferences were not applied until after first edit by user.
