@@ -213,8 +213,6 @@ The recommended Google Play Services version is 8.1.0, which requires specified 
 
 No breaking API changes are introduced in this release.
 
-The new optional audience segmentation feature requires some configuration to enable it, as described [here](segmentation.html).
-
 ## Android Studio/Gradle
 
 Set the Push Video SDK version to 1.9.11 in the dependencies section of `build.gradle`. e.g.
