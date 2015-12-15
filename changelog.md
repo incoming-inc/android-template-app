@@ -70,3 +70,7 @@ If using Android manifest merging, it is necessary to disable a reference to non
  * Improved notification icon sizing.
  * Allow the curator to edit the notification text in the control panel. The video title is used by default.
  * Defect fix for 1.8 segmentation feature:  User targeting preferences stored in Android SharedPreferences were not applied until after first edit by user.
+
+# Version 1.9.12 (December 15, 2015)
+
+ * Resume video at previous position when player is backgrounded while watching a video.
