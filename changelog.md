@@ -74,3 +74,9 @@ If using Android manifest merging, it is necessary to disable a reference to non
 # Version 1.9.12 (December 15, 2015)
 
  * Resume video at previous position when player is backgrounded while watching a video.
+
+# Version 1.10.12 (January 15, 2015)
+
+ * Improve handling of invalid access tokens.
+ * Context collection improvements.
+ * Fix client-server API compatibility issue for sponsored videos.

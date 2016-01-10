@@ -260,6 +260,26 @@ Set the Push Video SDK version to 1.9.12 in the dependencies section of `build.g
 
 The recommended Google Play Services version is 8.3.0, which requires a manifest version of 8298000.
 
+# Version 1.10.12
+
+## API changes
+
+No breaking API changes are introduced in this release.
+
+## Android Studio/Gradle
+
+Set the Push Video SDK version to 1.10.12 in the dependencies section of `build.gradle`. e.g.
+
+dependencies {
+compile 'com.incoming-media:incoming-push-video-sdk:1.10.12'
+compile 'com.android.support:support-v4:23.1.1'
+compile 'com.google.android.gms:play-services-location:8.3.0'
+compile 'com.google.android.gms:play-services-base:8.3.0'
+compile 'com.google.android.gms:play-services-gcm:8.3.0'
+}
+
+The recommended Google Play Services version is 8.3.0, which requires a manifest version of 8298000.
+
 
 
 
