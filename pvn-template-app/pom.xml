@@ -11,11 +11,11 @@
     </description>
     <packaging>apk</packaging>
     <!-- android:apk -->
-    <version>1.8.0</version>
+    <version>1.9.0</version>
 
     <properties>
-        <pvn.version>1.8.11</pvn.version>
-        <android.support.version>23.1.1</android.support.version>
+        <pvn.version>1.9.12</pvn.version>
+        <android.support.version>23.3.0</android.support.version>
         <play-services.version>8.3.0</play-services.version>
     </properties>
 
@@ -123,7 +123,7 @@
             <plugin>
                 <groupId>com.simpligility.maven.plugins</groupId>
                 <artifactId>android-maven-plugin</artifactId>
-                <version>4.3.0</version>
+                <version>4.4.1</version>
                 <extensions>true</extensions>
                 <configuration>
                     <!-- Customise source, test, and resources locations because ADT expects
