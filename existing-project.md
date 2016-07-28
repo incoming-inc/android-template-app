@@ -19,17 +19,6 @@ Gradle:
         }
     }
 
-Maven:
-
-    <repositories>
-      <repository>
-        <!-- Access to the Incoming release repo is not restricted -->
-        <id>incoming-release-repo</id>
-        <name>Incoming release repo</name>
-        <url>http://107.178.209.67:8081/nexus/content/repositories/releases/</url>
-      </repository>
-    </repositories>
-
 ## Add the library dependencies
 
 NOTE: Google Play Service version 6.5.0 ore greater is required.
@@ -45,42 +34,7 @@ Gradle:
         compile 'com.google.android.gms:play-services-location:7.5.0'
     }
 
-Maven:
 
-    <dependency>
-      <groupId>com.incoming-media</groupId>
-      <artifactId>incoming-push-video-sdk</artifactId>
-      <version>1.6.10</version>
-      <type>aar</type>
-     </dependency>
-
-    <dependency>
-      <groupId>com.android.support</groupId>
-      <artifactId>support-v4</artifactId>
-      <version>${android.support.version}</version>
-      <type>aar</type>
-    </dependency>
-
-    <dependency>
-      <groupId>com.google.android.gms</groupId>
-      <artifactId>play-services-base</artifactId>
-      <type>aar</type>
-      <version>${play-services.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.google.android.gms</groupId>
-      <artifactId>play-services-gcm</artifactId>
-      <type>aar</type>
-      <version>${play-services.version}</version>
-    </dependency>
-  
-     <dependency>
-      <groupId>com.google.android.gms</groupId>
-      <artifactId>play-services-location</artifactId>
-      <type>aar</type>
-      <version>${play-services.version}</version>
-    </dependency>
 
 # Configure the SDK Initialization Code
 

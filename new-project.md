@@ -18,15 +18,6 @@ Both Android Studio/Gradle and Maven build systems are supported.
 
 A Gradle build file (build.gradle) is supplied with the template Application at https://github.com/incoming-inc/android-template-app. A gradle wrapper script is provided to configure the Gradle installation.
 
-## Maven
-
-The Push Video Notification template application contains a maven pom file that can be used to build the application.
-
-The following build commands assume maven is installed:
-* Build a debug APK file: `mvn clean install`.
-* Build a debug APK file, deploy to the attached device, and run: `mvn clean install android:deploy android:run` 
-
-Note that the first time the build is executed the Maven Android Plugin and other build tools will be downloaded as necessary. [Maven (version 3.3.X)](http://maven.apache.org/download.cgi) must be installed beforehand.
 
 # Configure Your Push Video Project Key
 
