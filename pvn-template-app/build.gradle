@@ -23,21 +23,10 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 23
     }
-
-
-    // Configure source locations compatible with Eclipse to permit a single source of the template
-    // application for both IDEs. The default Gradle locations may be used if Eclipse is not used.
-    sourceSets {
-        main {
-            manifest.srcFile 'AndroidManifest.xml'
-            res.srcDirs = ['res']
-            assets.srcDirs = ['assets']
-        }
-    }
-
+    
     packagingOptions {
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/NOTICE'
