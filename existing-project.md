@@ -21,17 +21,17 @@ Gradle:
 
 ## Add the library dependencies
 
-NOTE: Google Play Service version 6.5.0 ore greater is required.
+NOTE: Google Play Service version 6.5.0 or greater is required.
 
 Gradle:
 
     dependencies {
         compile 'com.incoming-media:incoming-push-video-sdk:1.6.10'
         compile 'com.android.support:support-v4:22.2.1'
-        compile 'com.google.android.gms:play-services-base:7.5.0'
-        compile 'com.google.android.gms:play-services-gcm:7.5.0'
+        compile 'com.google.android.gms:play-services-base:9.2.1'
+        compile 'com.google.android.gms:play-services-gcm:9.2.1'
         // For Activity Recognition
-        compile 'com.google.android.gms:play-services-location:7.5.0'
+        compile 'com.google.android.gms:play-services-location:9.2.1'
     }
 
 
@@ -90,8 +90,6 @@ The permission `android.permission.ACCESS_COARSE_LOCATION` is optional in versio
      <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
 
         <!-- Begin PVN configuration -->
-
-        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
 
         <activity android:configChanges="orientation" android:exported="true" android:name="com.incoming.au.uiframework.VideoViewPlayer" android:screenOrientation="sensorLandscape">
         </activity>

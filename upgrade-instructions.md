@@ -270,15 +270,15 @@ No breaking API changes are introduced in this release.
 
 Set the Push Video SDK version to 1.10.12 in the dependencies section of `build.gradle`. e.g.
 
-dependencies {
-compile 'com.incoming-media:incoming-push-video-sdk:1.10.12'
-compile 'com.android.support:support-v4:23.1.1'
-compile 'com.google.android.gms:play-services-location:8.3.0'
-compile 'com.google.android.gms:play-services-base:8.3.0'
-compile 'com.google.android.gms:play-services-gcm:8.3.0'
+    dependencies {
+      compile 'com.incoming-media:incoming-push-video-sdk:1.10.12'
+      compile 'com.android.support:support-v4:24.1.1'
+      compile 'com.google.android.gms:play-services-location:9.2.1'
+      compile 'com.google.android.gms:play-services-base:9.2.1'
+      compile 'com.google.android.gms:play-services-gcm:9.2.1'
 }
 
-The recommended Google Play Services version is 8.3.0, which requires a manifest version of 8298000.
+The recommended Google Play Services version is 9.2.1.
 
 
 
