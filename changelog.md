@@ -75,7 +75,7 @@ If using Android manifest merging, it is necessary to disable a reference to non
 
  * Resume video at previous position when player is backgrounded while watching a video.
 
-# Version 1.10.12 (January 15, 2015)
+# Version 1.10.12 (January 15, 2016)
 
  * Improve handling of invalid access tokens.
  * Context collection improvements.

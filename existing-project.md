@@ -26,7 +26,7 @@ NOTE: Google Play Service version 6.5.0 or greater is required.
 Gradle:
 
     dependencies {
-        compile 'com.incoming-media:incoming-push-video-sdk:1.6.10'
+        compile 'com.incoming-media:incoming-push-video-sdk:1.10.12'
         compile 'com.android.support:support-v4:22.2.1'
         compile 'com.google.android.gms:play-services-base:9.2.1'
         compile 'com.google.android.gms:play-services-gcm:9.2.1'
