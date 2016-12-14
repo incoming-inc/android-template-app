@@ -281,6 +281,19 @@ Set the Push Video SDK version to 1.10.12 in the dependencies section of `build.
 The recommended Google Play Services version is 9.2.1.
 
 
+# Version 1.10.13
+
+## API changes
+
+No breaking API changes are introduced in this release.
+
+## Android Studio/Gradle
+
+Set the Push Video SDK version to 1.10.13 in the dependencies section of `build.gradle`. e.g.
+
+The recommended Google Play Services version is 9.2.1, or greater.
+
+
 
 
 
