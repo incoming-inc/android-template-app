@@ -80,3 +80,8 @@ If using Android manifest merging, it is necessary to disable a reference to non
  * Improve handling of invalid access tokens.
  * Context collection improvements.
  * Fix client-server API compatibility issue for sponsored videos.
+
+# Version 1.10.13 (December 15, 2016)
+
+ * Remove the ability to set the project key using the install referrer because it clashed with changed Google Play behavior.  
+ * Update context collection to satisfy updated Google Play requirements.

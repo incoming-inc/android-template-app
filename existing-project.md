@@ -26,7 +26,7 @@ NOTE: Google Play Service version 6.5.0 or greater is required.
 Gradle:
 
     dependencies {
-        compile 'com.incoming-media:incoming-push-video-sdk:1.10.12'
+        compile 'com.incoming-media:incoming-push-video-sdk:1.10.13'
         compile 'com.android.support:support-v4:22.2.1'
         compile 'com.google.android.gms:play-services-base:9.2.1'
         compile 'com.google.android.gms:play-services-gcm:9.2.1'
@@ -105,7 +105,7 @@ The permission `android.permission.ACCESS_COARSE_LOCATION` is optional in versio
                 <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
 
-                <!-- Replace com.incoming.example.incomingpvntemplate with application package name -->
+                <!-- Replace com.incoming.example.incomingpvntemplate with application package name. The variable ${packageName} can be used when building with the Gradle Android plugin -->
                 <category android:name="com.incoming.example.incomingpvntemplate"/>
             </intent-filter>
         </receiver>
