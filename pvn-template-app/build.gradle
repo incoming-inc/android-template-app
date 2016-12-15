@@ -3,7 +3,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.1'
+        classpath 'com.android.tools.build:gradle:2.2.3'
     }
 }
 
@@ -12,10 +12,6 @@ allprojects {
         jcenter()
         maven {
             url "http://107.178.209.67:8081/nexus/content/repositories/releases/"
-        }
-
-        flatDir {
-            dirs '/Users/dougwright/workspaces/Incoming/dev_pvn_v1/sdk/Incoming-SDK/build/outputs/aar/'
         }
 
     }
