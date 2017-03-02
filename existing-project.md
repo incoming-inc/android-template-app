@@ -85,7 +85,7 @@ Add the permissions, video player activities and broadcast receiver configuratio
 
 The permission `android.permission.ACCESS_COARSE_LOCATION` is optional in version 1.4 and above of the Push Video SDK. Coarse location information is used to improve notification timing and provide analytics data but may be omitted if it is inappropriate for the application to request this permission.
 
-##Broadcast Receiver Configuration And Video Player Activity Coinfiguration
+## Broadcast Receiver Configuration And Video Player Activity Coinfiguration
 
      <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
 
@@ -100,7 +100,6 @@ The permission `android.permission.ACCESS_COARSE_LOCATION` is optional in versio
                 <action android:name="com.incoming.playlist"/>
                 <action android:name="com.incoming.feed.check" />
                 <action android:name="com.incoming.download.trigger"/>
-                <action android:name="com.android.vending.INSTALL_REFERRER"/>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
