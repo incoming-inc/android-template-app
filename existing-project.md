@@ -38,7 +38,7 @@ Gradle:
 
 # Configure the SDK Initialization Code
 
-The Push Video SDK may be configured in the main Application class onCreate() or the application launch Activity onCreate(),
+The Push Video SDK may be configured in the main Application class onCreate() or the application launch Activity onCreate():
 
     // Use PushVideo#SELECTION_POOLED if the project is configured to use campaign mode
     // or PushVideo#SELECTION_PRESENTATION_PVN if the project is configured to use PVN mode.
