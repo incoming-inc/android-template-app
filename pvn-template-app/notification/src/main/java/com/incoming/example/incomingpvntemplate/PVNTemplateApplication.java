@@ -1,3 +1,6 @@
+/*******************************************************************************
+ * Copyright (c) Incoming Pty. Ltd. 2017
+ ******************************************************************************/
 package com.incoming.example.incomingpvntemplate;
 
 import android.app.Application;
@@ -6,10 +9,6 @@ import android.util.Log;
 
 import com.incoming.au.foundation.tool.LogIncoming;
 import com.incoming.pvnsdk.PushVideo;
-
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Simple Android Application class that launches the Incoming Push Video SDK. The Push Video SDK configuration
@@ -29,14 +28,20 @@ public class PVNTemplateApplication extends Application {
 
     // Turn on logging (optional)
     LogIncoming.setDevBuild(true);
-    PushVideo.initialize(getApplicationContext(), endPoint, projectKey);
+
+    // Use PushVideo#SELECTION_POOLED if the project is configured to use campaign mode
+    // or PushVideo#SELECTION_PRESENTATION_PVN if the project is configured to use PVN mode.
+    @PushVideo.ContentSelectionStrategy int contentSelectionStrategy = PushVideo.SELECTION_POOLED;
+    @PushVideo.ContentPresentationStrategy int presentationStrategy = PushVideo.PRESENTATION_PVN;
+    PushVideo.initialize(getApplicationContext(), endPoint, projectKey, contentSelectionStrategy, presentationStrategy);
+
     // Configure optional advertising SDK
     // PushVideo.configureAdManager(...);
 
-    // Configure audience segmentation based on the Android Prefereces framework (optional)
+    // Configure audience segmentation based on the Android Preferences framework (optional)
     // See res/xml/preferences.xml
-    Set<String> contentTargetingKeys = new HashSet<>(Arrays.asList("AWS", "ApacheSpark", "GoogleVideos", "Stanford", "JavaScript"));
-    PushVideo.configureAudienceSegmentationKeys(contentTargetingKeys);
+    // Set<String> contentTargetingKeys = new HashSet<>(Arrays.asList("AWS", "ApacheSpark", "GoogleVideos", "Stanford", "JavaScript"));
+    // PushVideo.configureAudienceSegmentationKeys(contentTargetingKeys);
 
     // Apply the default values from the preferences file. This is important if application preferences are used to control audience
     // segmentation targets. readAgain is set to true so the default values from both preferences xml files are applied.
