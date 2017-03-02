@@ -276,7 +276,7 @@ Set the Push Video SDK version to 1.10.12 in the dependencies section of `build.
       compile 'com.google.android.gms:play-services-location:9.2.1'
       compile 'com.google.android.gms:play-services-base:9.2.1'
       compile 'com.google.android.gms:play-services-gcm:9.2.1'
-}
+    }
 
 The recommended Google Play Services version is 9.2.1.
 
@@ -291,7 +291,35 @@ No breaking API changes are introduced in this release.
 
 Set the Push Video SDK version to 1.10.13 in the dependencies section of `build.gradle`. e.g.
 
-The recommended Google Play Services version is 9.2.1, or greater.
+    dependencies {
+      compile 'com.incoming-media:incoming-push-video-sdk:1.10.13'
+      compile 'com.android.support:support-v4:24.1.1'
+      compile 'com.google.android.gms:play-services-location:10.0.1'
+      compile 'com.google.android.gms:play-services-base:10.0.1'
+      compile 'com.google.android.gms:play-services-gcm:10.0.1'
+    }
+
+The recommended Google Play Services version is 10.0.1, or greater.
+
+# Version 2.10.15
+
+## API changes
+
+No breaking API changes are introduced in this release.
+
+## Android Studio/Gradle
+
+Set the Push Video SDK version to 2.0.15 in the dependencies section of `build.gradle`. e.g.
+
+    dependencies {
+      compile 'com.incoming-media:incoming-push-video-sdk:2.0.15'
+      compile 'com.android.support:support-v4:25.2.0'
+      compile 'com.google.android.gms:play-services-location:10.2.0'
+      compile 'com.google.android.gms:play-services-base:10.2.0'
+      compile 'com.google.android.gms:play-services-gcm:10.2.0'
+    }
+
+The recommended Google Play Services version is 10.2.0, or greater.
 
 
 

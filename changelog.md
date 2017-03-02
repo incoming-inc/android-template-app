@@ -85,3 +85,8 @@ If using Android manifest merging, it is necessary to disable a reference to non
 
  * Remove the ability to set the project key using the install referrer because it clashed with changed Google Play behavior.  
  * Update context collection to satisfy updated Google Play requirements.
+
+# Version 2.0.15 (March 1, 2017)
+
+ * New project-wide campaign mode feature to support displaying the same video several times.
+
