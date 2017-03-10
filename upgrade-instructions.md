@@ -322,6 +322,28 @@ Set the Push Video SDK version to 2.0.15 in the dependencies section of `build.g
 The recommended Google Play Services version is 10.2.0, or greater.
 
 
+# Version 2.10.16
+
+## API changes
+
+New APIs to support the interstitial presentation mode have been added.
+
+## Android Studio/Gradle
+
+Set the Push Video SDK version to 2.0.15 in the dependencies section of `build.gradle`. e.g.
+
+    dependencies {
+      compile 'com.incoming-media:incoming-push-video-sdk:2.0.16'
+      compile 'com.android.support:support-v4:25.2.0'
+      compile 'com.google.android.gms:play-services-location:10.2.0'
+      compile 'com.google.android.gms:play-services-base:10.2.0'
+      compile 'com.google.android.gms:play-services-gcm:10.2.0'
+    }
+
+The recommended Google Play Services version is 10.2.0, or greater.
+
+
+
 
 
 

@@ -90,3 +90,8 @@ If using Android manifest merging, it is necessary to disable a reference to non
 
  * New project-wide campaign mode feature to support displaying the same video several times.
 
+# Version 2.0.16 (March 10, 2017)
+
+ * Add support for interstitial video presentation option. The media controller is disabled by default in interstitial mode.
+ * Send a local broadcast when a video has been played.
+
