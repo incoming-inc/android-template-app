@@ -35,8 +35,7 @@ public class PVNTemplateApplication extends Application {
     @PushVideo.ContentPresentationStrategy int presentationStrategy = PushVideo.PRESENTATION_PVN;
     PushVideo.initialize(getApplicationContext(), endPoint, projectKey, contentSelectionStrategy, presentationStrategy);
 
-    // Configure optional advertising SDK
-    // PushVideo.configureAdManager(...);
+
 
     // Configure audience segmentation based on the Android Preferences framework (optional)
     // See res/xml/preferences.xml
