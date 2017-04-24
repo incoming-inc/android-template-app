@@ -21,13 +21,13 @@ The host application can also provide custom targeting attributes, for example â
  1. An API interface to set the content targeting keys and values programmatically. 
 
 
-#Content Targeting using Settings
+# Content Targeting using Settings
 
 The template application demonstrates this approach using a `PreferenceFragement`, as shown in the <a href="https://github.com/incoming-inc/android-template-app/blob/master/pvn-template-app/src/main/java/com/incoming/example/incomingpvntemplate/PVNTemplateSettings.java" target="_blank">template app settings</a>. The host application must <a href="apidocs/com/incoming/pvnsdk/PushVideo.html#configureAudienceSegmentationKeys-java.util.Set-" target="_blank">provide the Push SDK with a set of user settings keys</a>. The template applications calls this method in the launch activity; it may also be called from the Application class if that is used. They values of the keys will be used for content targeting. The content targetting user preferences are listed in <a href="https://github.com/incoming-inc/android-template-app/blob/master/pvn-template-app/res/xml/preferences.xml" target="_blank">preferences.xml</a>.
 
 If the host application applies default values for the segmentation preferences using a preferences xml file then the default values should be set in the preference store, as shown in the <a href="https://github.com/incoming-inc/android-template-app/blob/master/pvn-template-app/src/main/java/com/incoming/example/incomingpvntemplate/PVNTemplateApplication.java" target="_blank">application class</a>.
 
-#Content Targeting using SDK API
+# Content Targeting using SDK API
 
 The second approach is to set the custom audience segmentation targets using the <a href="apidocs/com/incoming/pvnsdk/DataAccessService.html#setContentTargets-java.util.Map-" target="_blank">segmentation API</a>. The host application should call this method every time the content targetting preferences are changed by the user or by the host application.
 
