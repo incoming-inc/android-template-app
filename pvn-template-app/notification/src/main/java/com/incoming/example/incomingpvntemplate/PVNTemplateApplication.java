@@ -30,9 +30,10 @@ public class PVNTemplateApplication extends Application {
     LogIncoming.setDevBuild(true);
 
     // Use PushVideo#SELECTION_POOLED if the project is configured to use campaign mode
-    // or PushVideo#SELECTION_PRESENTATION_PVN if the project is configured to use PVN mode.
+    // or PushVideo#SELECTION_PRESENTATION_PVN if the project is configured to use PVN mode
+    // or Push#PRESENTATION_INTERSTITIAL to use intersitial mode
     @PushVideo.ContentSelectionStrategy int contentSelectionStrategy = PushVideo.SELECTION_POOLED;
-    @PushVideo.ContentPresentationStrategy int presentationStrategy = PushVideo.PRESENTATION_PVN;
+    @PushVideo.ContentPresentationStrategy int presentationStrategy = PushVideo.PRESENTATION_INTERSTITIAL;
     PushVideo.initialize(getApplicationContext(), endPoint, projectKey, contentSelectionStrategy, presentationStrategy);
 
 
