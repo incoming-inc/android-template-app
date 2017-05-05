@@ -95,3 +95,8 @@ If using Android manifest merging, it is necessary to disable a reference to non
  * Add support for interstitial video presentation option. The media controller is disabled by default in interstitial mode.
  * Send a local broadcast when a video has been played.
 
+# Version 2.1.4 (May 3, 2017)
+
+ * Simplify integration API by removing the distinction between "PVN" and "Campaign Mode" cotent selection.
+ * Support a configurable limit on the number of times a video is presented to each user.
+
