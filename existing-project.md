@@ -51,6 +51,8 @@ If the host application uses GCM notifications for other purposes it should ensu
 
 Add the permissions, video player activities and broadcast receiver configuration to the application section of the Android manifest.
 
+Please set the application package name at `uses-permission android:name=...` and `category android:name=...` in the Android manifest as shown below.
+
 ##Permissions
 
     <!-- Begin PVN permission configuration -->
