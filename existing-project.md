@@ -40,10 +40,6 @@ Gradle:
 
 The Push Video SDK may be configured in the main Application class onCreate() or the application launch Activity onCreate():
 
-    // Use PushVideo#SELECTION_POOLED if the project is configured to use campaign mode
-    // or PushVideo#SELECTION_PRESENTATION_PVN if the project is configured to use PVN mode.
-    @PushVideo.ContentSelectionStrategy int contentSelectionStrategy = PushVideo.SELECTION_POOLED;
-    @PushVideo.ContentPresentationStrategy int presentationStrategy = PushVideo.PRESENTATION_PVN;
     PushVideo.initialize(getApplicationContext(), ”API ENDPOINT”, “PROJECT KEY”);
     
 The Push Video server uses GCM [collapse keys](https://developers.google.com/cloud-messaging/concept-options#collapsible_and_non-collapsible_messages) to inform the Push Video SDK about new content and configuration changes.
