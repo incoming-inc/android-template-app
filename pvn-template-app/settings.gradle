@@ -1,1 +1,1 @@
-include ':notification', ':presence'
+include ':notification'

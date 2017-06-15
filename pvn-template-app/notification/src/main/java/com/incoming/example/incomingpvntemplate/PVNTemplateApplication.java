@@ -29,11 +29,7 @@ public class PVNTemplateApplication extends Application {
     // Turn on logging (optional)
     LogIncoming.setDevBuild(true);
 
-    // Use Push#PRESENTATION_INTERSTITIAL to use intersitial mode
-    @PushVideo.ContentPresentationStrategy int presentationStrategy = PushVideo.PRESENTATION_INTERSTITIAL;
-    PushVideo.initialize(getApplicationContext(), endPoint, projectKey, presentationStrategy);
-
-
+    PushVideo.initialize(getApplicationContext(), endPoint, projectKey);
 
     // Configure audience segmentation based on the Android Preferences framework (optional)
     // See res/xml/preferences.xml
