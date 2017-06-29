@@ -100,3 +100,7 @@ If using Android manifest merging, it is necessary to disable a reference to non
  * Simplify integration API by removing the distinction between "PVN" and "Campaign Mode" cotent selection.
  * Support a configurable limit on the number of times a video is presented to each user.
 
+# Version 2.1.9 (June 29, 2017)
+
+* Resolve minor issue when capturing video playback analytics.
+
