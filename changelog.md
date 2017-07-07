@@ -104,3 +104,7 @@ If using Android manifest merging, it is necessary to disable a reference to non
 
 * Resolve minor issue when capturing video playback analytics.
 
+# Version 2.1.10 (July 7, 2017)
+
+* Improve video deletion behavior once a campaign has completed.
+
