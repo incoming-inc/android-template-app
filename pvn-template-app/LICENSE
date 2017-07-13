@@ -1,0 +1,44 @@
+Incoming Media SDK Agreement
+
+This Incoming Media SDK and User (“Agreement”) is made available by Incoming Media, Inc. (“Incoming”). By downloading or using the Incoming SDK, you and any company, entity, or organization on behalf of which you are accepting this Agreement (“Developer”) hereby agrees to be bound by all terms and conditions of this Agreement, and you represent and warrant that you are an authorized representative of Developer with the authority to bind Developer to this Agreement.
+
+IF YOU DO NOT AGREE TO ALL TERMS AND CONDITIONS OF THIS AGREEMENT, DO NOT DOWNLOAD OR USE THE INCOMING SDK.
+
+1. License Grant.
+
+Subject to the provisions of these Terms and Conditions Incoming grants to Customer a non-exclusive, non-transferable, non-sublicensable right (except to Approved Sublicensee(s)) to remotely access and use SDK for business purposes only (“SDK License”).
+
+2. Revisions.
+
+Incoming may change, revise, modify (either permanently or temporarily) the functionality or scope of SDK at any time at its sole discretion (an “Update”) provided always that no Update will diminish the functionality of SDK, in the sense that any of the Approved Applications do not function properly anymore. Following such Update, as applicable, (Customer can elect to terminate the SDK License in accordance with the terms of this Agreement or continue to access and use SDK in accordance with the provisions of this Agreement.
+
+3. Location of SDK and Access.
+
+SDK will be hosted on one or more servers either owned or licensed by Incoming and will be accessible by Customer over the Internet. In order to access SDK, Customer will be required to register with Incoming (an “Account”) and will be provided with a unique user name and password for each such Account (“Account Access Information”). Incoming has the right but not the obligation to monitor access to SDK and, without limiting any remedies that it may have hereunder or at law, may deny access to any Customer who violates these Terms and Conditions.
+
+
+4. Rights and Restrictions Regarding Use of SDK.
+
+Reverse Engineer. Customer may not, nor cause or permit any of its employees or any third party to, modify, adapt, translate, reverse engineer, decompile, disassemble, translate or create derivative works based on SDK without the prior written consent of Incoming, which Incoming may withhold in its sole discretion.
+
+Rent, Lease and Transfer. SDK is licensed only to Customer. Customer shall not sublicense, transfer, lease, assign, rent, distribute, sell or otherwise dispose of SDK (including any of the materials) on a temporary or permanent basis except with the written consent of Incoming, which Incoming may withhold in its sole discretion. Prior to transferring Incoming to an authorized transferee, the transferee shall agree in writing to be bound by all of these Terms and Conditions.
+
+Access Restrictions and Security Without Incoming’s written consent, Customer shall not permit or allow other entities to have access to or to use any Account Access Information to access or use SDK or for any other purpose. Customer accessing a particular Account is solely responsible for ensuring that the Account Access Information for accessing and using SDK is utilized only by such person. Incoming shall have no liability for any loss, claim, damages or other liability whatsoever that may arise from the unauthorized use of any Account Access Information. If any of Customer’s Account Access Information is lost or stolen, it is Customer’s responsibility to notify Incoming of such loss or theft so that the account can be deactivated and a new username and password can be provided. Incoming will use commercially reasonable efforts to effect password deactivation requests as soon as practicable after their receipt in writing from Customer. Although Incoming has taken measures to safeguard the security of information submitted in using SDK, Incoming cannot guarantee the security of information transmitted during use of SDK or stored by Customer and shall not be liable to Customer or any other person or entity in any way for any compromise of the security of such information.
+
+Manner of Use. Customer is solely responsible for all data uploaded into SDK (“Customer’s Content”) and all activity that occurs under Customer’s Accounts. Customer shall not use the Service for any illegal or unauthorized purpose(s). Customer must not, in the use of the Service, violate any applicable laws (including but not limited to U.S. copyright laws, and other applicable federal, state and local laws).
+
+Reasonable use. Incoming may, in its discretion, disable any Account or limit bandwidth usage should an Account’s bandwidth consumption exceed average usage (as determined by Incoming) in any one month period. Incoming also may, in its discretion, disable any Account or limit storage capacity with respect to such Account should Customer’s storage exceed average usage (as determined by Incoming).
+
+5. Ownership of Service and Intellectual Property Rights.
+
+Incoming does not sell SDK to Customer, but only grants Customer a license to use SDK according to these Terms and Conditions. Incoming retains ownership in SDK and all intellectual property rights in SDK, including without limitation any and all patents, copyrights, trade secrets, trademarks and any other proprietary and other rights. Customer agrees that Incoming may audit Customer’s use of SDK for compliance with these Terms and Conditions at any time, upon reasonable notice. All rights not specifically granted under these Terms and Conditions are reserved by Incoming.
+
+6 Disclaimer of Warranties.
+
+EXCEPT AS EXPRESSLY PROVIDED IN THIS AGREEMENT, SDK (INCLUDING ANY WRITTEN MATERIALS), AND ANY SUPPORT ARE ALL PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR STATUTORY, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE OR USE AND ANY WARRANTY OF ERROR FREE APPLICATION OR NON-INFRINGEMENT. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, INCOMING DOES NOT WARRANT THE USE, RESULTS OR PERFORMANCE OF THE SERVICE, THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE OR SECURE, OR THAT THE SERVER(S) THAT MAKE(S) THE SERVICE AVAILABLE, IS FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.
+
+7. Miscellaneous
+
+In the event that any provision of these Terms and Conditions is found to be invalid, illegal or unenforceable, the validity, legality and enforceability of any remaining promises shall not in any way be affected or impaired and a valid, legal and enforceable provision of similar intent and economic impact shall be substituted therefor.
+
+The provisions of these Terms and Conditions shall be interpreted and construed in accordance with their fair meanings, and not strictly for or against any party, regardless of which party may have drafted these Terms and Conditions or any specific provision of these Terms and Conditions.
