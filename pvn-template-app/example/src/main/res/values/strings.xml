@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Incoming PVN Template</string>
+    <string name="app_name">Incoming Push Video Template</string>
     <string name="hello_world">The Incoming Push Video Notification SDK is launched by this blank application.</string>
     <string name="notification_ticker_text">Recommended video for you to watch now!</string>
 

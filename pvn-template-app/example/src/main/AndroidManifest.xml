@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.incoming.example.incomingpvntemplate"
+<manifest package="com.incoming.pushvideo.example"
           xmlns:android="http://schemas.android.com/apk/res/android"
           android:versionCode="45"
           android:versionName="1.8.0">
 
-    <!-- Begin PVN permission configuration -->
-
+    <!-- Begin Push Video permission configuration -->
 
     <!-- Permissions required for GCM -->
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
@@ -31,7 +30,7 @@
 
     <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
 
-    <!-- End PVN permission configuration -->
+    <!-- End Push Video permission configuration -->
 
     <application
         android:name="com.incoming.pushvideo.example.PVNTemplateApplication"
@@ -40,15 +39,9 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
 
-        <!-- Begin PVN configuration -->
+        <!-- Begin Push Video configuration -->
 
-        <activity
-            android:name="com.incoming.au.uiframework.VideoViewPlayer"
-            android:configChanges="orientation"
-            android:exported="true">
-        </activity>
-
-        <receiver android:name="com.incoming.au.sdk.notification.NotificationBroadcastReceiver">
+        <receiver android:name="com.incoming.au.sdk.presentation.NotificationBroadcastReceiver">
             <intent-filter>
                 <action android:name="com.incoming.notif.check"/>
                 <action android:name="com.incoming.feed.check"/>
@@ -59,13 +52,13 @@
                 <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
 
                 <!-- Replace com.incoming.example.incomingpvntemplate with application package name -->
-                <category android:name="com.incoming.example.incomingpvntemplate"/>
+                <category android:name="ccom.incoming.pushvideo.example"/>
             </intent-filter>
         </receiver>
 
         <service android:name="com.incoming.au.sdk.PVNIntentService"/>
 
-        <!-- End PVN configuration -->
+        <!-- End Push Video configuration -->
 
         <activity
             android:name="com.incoming.pushvideo.example.PVNTemplateActivity"
