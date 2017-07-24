@@ -1,15 +1,17 @@
 /*******************************************************************************
  * Copyright (c) Incoming Pty. Ltd. 2017
  ******************************************************************************/
-package com.incoming.example.incomingpvntemplate;
+package com.incoming.pushvideo.example;
 /*******************************************************************************
  * Copyright (c) Incoming Pty. Ltd. 2017
  ******************************************************************************/
+
 import android.app.Application;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
 import com.incoming.au.foundation.tool.LogIncoming;
+import com.incoming.example.incomingpvntemplate.R;
 import com.incoming.pvnsdk.PushVideo;
 
 /**

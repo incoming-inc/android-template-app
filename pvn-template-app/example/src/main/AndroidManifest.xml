@@ -34,7 +34,7 @@
     <!-- End PVN permission configuration -->
 
     <application
-        android:name=".PVNTemplateApplication"
+        android:name="com.incoming.pushvideo.example.PVNTemplateApplication"
         android:allowBackup="false"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -68,7 +68,7 @@
         <!-- End PVN configuration -->
 
         <activity
-            android:name="com.incoming.example.incomingpvntemplate.PVNTemplateActivity"
+            android:name="com.incoming.pushvideo.example.PVNTemplateActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -78,7 +78,7 @@
 
         <!-- Optional settings activity -->
         <activity
-            android:name=".PVNTemplateSettings"
+            android:name="com.incoming.pushvideo.example.PVNTemplateSettings"
             android:label="Settings">
             <intent-filter>
                 <!-- This intent filter makes the settings accessible with a long press on the notification when running Lollipop -->

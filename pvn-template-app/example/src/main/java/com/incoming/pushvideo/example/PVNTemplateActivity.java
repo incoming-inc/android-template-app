@@ -1,11 +1,13 @@
 /*******************************************************************************
  * Copyright (c) Incoming Pty. Ltd. 2017
  ******************************************************************************/
-package com.incoming.example.incomingpvntemplate;
+package com.incoming.pushvideo.example;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
+
+import com.incoming.example.incomingpvntemplate.R;
 
 public class PVNTemplateActivity extends Activity {
 
