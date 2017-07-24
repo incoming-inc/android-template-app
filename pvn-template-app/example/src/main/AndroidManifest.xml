@@ -15,8 +15,8 @@
         android:name="com.example.incomingpvntemplate.permission.C2D_MESSAGE"
         android:protectionLevel="signature"/>
 
-    <!-- Replace com.incoming.example.incomingpvntemplate with application package name -->
-    <uses-permission android:name="com.incoming.example.incomingpvntemplate.permission.C2D_MESSAGE"/>
+    <!-- Replace com.incoming.pushvideo.example with application package name -->
+    <uses-permission android:name="com.incoming.pushvideo.example.permission.C2D_MESSAGE"/>
 
     <!-- Required to store downloaded videos -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -51,8 +51,8 @@
                 <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
 
-                <!-- Replace com.incoming.example.incomingpvntemplate with application package name -->
-                <category android:name="ccom.incoming.pushvideo.example"/>
+                <!-- Replace com.incoming.pushvideo.example with application package name -->
+                <category android:name="com.incoming.pushvideo.example"/>
             </intent-filter>
         </receiver>
 

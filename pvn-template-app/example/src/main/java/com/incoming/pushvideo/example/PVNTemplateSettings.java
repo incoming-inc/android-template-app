@@ -1,4 +1,4 @@
-/*******************************************************************************
+/* ******************************************************************************
  * Copyright (c) Incoming Pty. Ltd. 2017
  ******************************************************************************/
 package com.incoming.pushvideo.example;
@@ -6,8 +6,6 @@ package com.incoming.pushvideo.example;
 import android.app.Activity;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
-
-import com.incoming.example.incomingpvntemplate.R;
 
 /**
  * Basic settings Activity that includes the  default Push Video settings and some content targeting settings for the user.

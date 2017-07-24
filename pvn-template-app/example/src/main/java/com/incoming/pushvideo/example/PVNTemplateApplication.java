@@ -11,9 +11,7 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 
 import com.incoming.au.foundation.tool.LogIncoming;
-import com.incoming.example.incomingpvntemplate.R;
 import com.incoming.pvnsdk.PushVideo;
-
 /**
  * Simple Android Application class that launches the Incoming Push Video SDK. The Push Video SDK configuration
  * may also be invoked from the launch Activity.
