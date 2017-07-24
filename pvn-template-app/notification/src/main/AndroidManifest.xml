@@ -45,8 +45,7 @@
         <activity
             android:name="com.incoming.au.uiframework.VideoViewPlayer"
             android:configChanges="orientation"
-            android:exported="true"
-            android:screenOrientation="sensorLandscape">
+            android:exported="true">
         </activity>
 
         <receiver android:name="com.incoming.au.sdk.notification.NotificationBroadcastReceiver">

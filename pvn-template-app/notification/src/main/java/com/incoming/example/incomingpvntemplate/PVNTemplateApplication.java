@@ -2,7 +2,9 @@
  * Copyright (c) Incoming Pty. Ltd. 2017
  ******************************************************************************/
 package com.incoming.example.incomingpvntemplate;
-
+/*******************************************************************************
+ * Copyright (c) Incoming Pty. Ltd. 2017
+ ******************************************************************************/
 import android.app.Application;
 import android.preference.PreferenceManager;
 import android.util.Log;
