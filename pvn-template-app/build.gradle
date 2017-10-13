@@ -13,7 +13,9 @@ allprojects {
         maven {
             url "http://107.178.209.67:8081/nexus/content/repositories/releases/"
         }
-
+        maven {
+            url "https://maven.google.com"
+        }
     }
 }
 
