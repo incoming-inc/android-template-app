@@ -46,23 +46,8 @@
             android:name="com.incoming.au.uiframework.VideoViewPlayer"
             android:configChanges="orientation"
             android:exported="true"
-            android:screenOrientation="sensorLandscape">
+            android:screenOrientation="sensor">
         </activity>
-
-        <receiver android:name="com.incoming.au.sdk.notification.NotificationBroadcastReceiver">
-            <intent-filter>
-                <action android:name="com.incoming.notif.check"/>
-                <action android:name="com.incoming.feed.check"/>
-                <action android:name="com.incoming.playlist"/>
-                <action android:name="com.incoming.download.trigger"/>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
-                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
-
-                <!-- Replace com.incoming.example.incomingpvntemplate with application package name -->
-                <category android:name="com.incoming.example.incomingpvntemplate"/>
-            </intent-filter>
-        </receiver>
 
         <service android:name="com.incoming.au.sdk.PVNIntentService"/>
 
