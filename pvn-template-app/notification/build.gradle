@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.1"
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 25
+        targetSdkVersion 27
     }
 
     packagingOptions {
@@ -16,9 +16,9 @@ android {
 }
 
 dependencies {
-    compile 'com.incoming-media:incoming-push-video-sdk:2.1.11'
-    compile 'com.android.support:support-v4:25.3.1'
-    compile 'com.google.android.gms:play-services-base:11.0.4'
-    compile 'com.google.android.gms:play-services-location:11.0.4'
-    compile 'com.google.android.gms:play-services-gcm:11.0.4'
+    compile 'com.incoming-media:incoming-push-video-sdk:2.3.3'
+    compile 'com.android.support:support-v4:27.1.0'
+    compile 'com.google.android.gms:play-services-base:11.8.0'
+    compile 'com.google.android.gms:play-services-location:11.8.0'
+    compile 'com.google.android.gms:play-services-gcm:11.8.0'
 }
