@@ -26,12 +26,12 @@ NOTE: Google Play Service version 6.5.0 or greater is required.
 Gradle:
 
     dependencies {
-        compile 'com.incoming-media:incoming-push-video-sdk:2.1.10'
-        compile 'com.android.support:support-v4:25.3.1'
-        compile 'com.google.android.gms:play-services-base:11.0.2'
-        compile 'com.google.android.gms:play-services-gcm:11.0.2'
+        compile 'com.incoming-media:incoming-push-video-sdk:2.3.3'
+        compile 'com.android.support:support-v4:27.0.2'
+        compile 'com.google.android.gms:play-services-base:11.8.0'
+        compile 'com.google.android.gms:play-services-gcm:11.8.0'
         // For Activity Recognition
-        compile 'com.google.android.gms:play-services-location:11.0.2'
+        compile 'com.google.android.gms:play-services-location:11.8.0'
     }
 
 
