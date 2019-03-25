@@ -4,7 +4,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.3.2'
     }
 }
 
@@ -14,12 +14,11 @@ allprojects {
         maven {
             url "http://107.178.209.67:8081/nexus/content/repositories/releases/"
         }
-        maven {
-            url "https://maven.google.com"
-        }
+        google()
+    }
+
+    wrapper {
+        gradleVersion = '4.10.3'
     }
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '4.5.1'
-}

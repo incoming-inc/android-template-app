@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.incoming.example.incomingpvntemplate"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionCode="45"
+          android:versionName="1.8.0">
+
+
+    <application
+        android:name=".PVNTemplateApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- Begin PVN configuration -->
+
+        <receiver android:name="com.incoming.au.sdk.notification.NotificationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+                <!-- Used to ensure multiple host applications using the SDK do not interfere with one another. -->
+                <category android:name="${packageName}"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- End PVN configuration -->
+
+        <activity
+            android:name="com.incoming.example.incomingpvntemplate.PVNTemplateActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>
