@@ -3,28 +3,23 @@ title: Integration Instructions
 layout: default 
 ---
 
-
-The Incoming Push Video SDK can be used in a [new project](#new-project) by cloning the simple template application,  or can be [added to an existing application](#add-to-existing-project) by updating the build configuration, Android manifest, and adding a small amount of code.
+The {{ site.title }} can be used in a [new project](#new-project) by cloning the simple template application,  or can be [added to an existing application](#add-to-existing-project) by updating the build configuration, Android manifest, and adding a small amount of code.
 
 # Integrate the Push Video SDK
 
- * [New Project From Template](new-project.html)
- * [Existing Project](existing-project.html)
+ * [Try out the Sourse SDK using the simple example application](new-project.html)
+ * [Integrate the Sourse SDK in an application](apidocs/co/sourse/pvnsdk/Sourse.html)
  * [F.A.Q.](faq.html)
 
-# Optional Configuration
+<!--# Optional Configuration-->
 
- * [Configure Settings](configure-settings.html)
- * [Application Re-Engagement Deep Linking](deep-linking.html)
- * [Audience Segmentation](segmentation.html)
-
- <!--- * [Third Party Advertising SDK Integration](advertising.html) --->
-
-# API Documentation
-
- * [PVN SDK API Documentation](apidocs/index.html)
+ <!--* [Application Re-Engagement Deep Linking](deep-linking.html)-->
+ <!--* [Audience Segmentation](segmentation.html)-->
 
 # Release Notes and Upgrade Instructions
 
  * [Release Notes](changelog.html)
  * [Upgrade Instructions](upgrade-instructions.html)
+
+
+

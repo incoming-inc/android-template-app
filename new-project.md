@@ -12,7 +12,7 @@ The Push Video template application is in the directory `pvn-template-app` and p
 
 # Import and Compile the Project
 
-Both Android Studio/Gradle and Maven build systems are supported. Maven build setup instructions can be  provided by Incoming Media upon request.
+Both Android Studio/Gradle and Maven build systems are supported.
 
 ## Gradle/Android Studio
 
