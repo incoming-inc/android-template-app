@@ -15,5 +15,5 @@ android {
 }
 
 dependencies {
-    implementation 'co.sourse:sourse-push-video-sdk:2.6.3'
+    implementation 'co.sourse:sourse-push-video-sdk:2.6.4'
 }

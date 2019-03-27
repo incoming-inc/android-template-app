@@ -1,14 +1,14 @@
-package com.incoming.example.incomingpvntemplate;
+package co.sourse.example.pvn;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-public class PVNTemplateActivity extends Activity {
+public class ExampleActivity extends Activity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_pvntemplate);
+    setContentView(R.layout.activity_example);
   }
 
 }
