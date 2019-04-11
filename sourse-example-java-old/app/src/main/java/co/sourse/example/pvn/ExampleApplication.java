@@ -3,7 +3,6 @@ package co.sourse.example.pvn;
 import android.app.Application;
 import android.util.Log;
 
-import co.sourse.example.R;
 import co.sourse.pvnsdk.Sourse;
 
 /**

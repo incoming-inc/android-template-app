@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Sourse Java Example</string>
-    <string name="message">The Sourse SDK is launched by this blank application.</string>
+    <string name="app_name">Source Java Example</string>
 </resources>
