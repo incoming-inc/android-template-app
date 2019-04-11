@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="incoming_pvn_endpoint">https://api.incoming.tv</string>
+    <!--<string name="incoming_pvn_project_key">your-project-key</string>-->
+    <string name="incoming_pvn_project_key">6322431419744256-eb3723130fbddd2e5d6d6caf98da0237cd3cfb11a7f878f3587a5088ebf4d9cb</string>
+</resources>
