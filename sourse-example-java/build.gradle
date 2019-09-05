@@ -19,7 +19,7 @@ allprojects {
         google()
         jcenter()
         maven {
-            url "http://107.178.209.67:8081/nexus/content/repositories/releases/"
+            url "https://mymavenrepo.com/repo/CzFGK2TmqzylWnZILFjL/"
         }
         
     }
